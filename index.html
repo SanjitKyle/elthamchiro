@@ -1589,13 +1589,7 @@
         >
           <!-- Richard Frost -->
           <article
-            onclick="openBookingModal('Chiropractic')"
-            onkeydown="
-              if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                openBookingModal('Chiropractic');
-              }
-            "
+            
             tabindex="0"
             role="button"
             aria-label="Book an appointment with Richard Frost"
@@ -1637,7 +1631,7 @@
           </article>
 
           <!-- Selina Begum -->
-          <article
+          <!-- <article
             onclick="openBookingModal('Podiatry')"
             onkeydown="
               if (event.key === 'Enter' || event.key === ' ') {
@@ -1683,17 +1677,11 @@
               Specialises in foot, ankle and lower-limb care.
             </p>
 
-          </article>
+          </article> -->
 
           <!-- Stuart Dowden -->
           <article
-            onclick="openBookingModal('Osteopathy')"
-            onkeydown="
-              if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                openBookingModal('Osteopathy');
-              }
-            "
+           
             tabindex="0"
             role="button"
             aria-label="Book an appointment with Stuart Dowden"
@@ -1732,18 +1720,12 @@
 
           </article>
 
-          <!-- Julie Chambers -->
+          <!-- Ina Farrelly -->
           <article
-            onclick="openBookingModal('Podiatry')"
-            onkeydown="
-              if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                openBookingModal('Podiatry');
-              }
-            "
+           
             tabindex="0"
             role="button"
-            aria-label="Book an appointment with Julie Chambers"
+            aria-label="Book an appointment with Ina Farrelly"
             class="group flex cursor-pointer flex-col items-center rounded-3xl border border-slate-100 bg-white px-5 py-7 text-center shadow-[0_5px_25px_rgba(14,41,66,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-[#9ce6e2] hover:shadow-[0_18px_40px_rgba(0,168,157,0.13)]"
           >
             <div class="relative mb-5 h-28 w-28 shrink-0">
@@ -1752,8 +1734,8 @@
               ></div>
 
               <img
-                src="assets/Julie-Podiatrist.jpg"
-                alt="Julie Chambers, Podiatrist"
+                src="assets/Ina.jpg"
+                alt="Ina Farrelly, Podiatrist"
                 loading="lazy"
                 decoding="async"
                 class="relative h-full w-full rounded-full border-4 border-white object-cover object-top shadow-md"
@@ -1761,7 +1743,7 @@
             </div>
 
             <h3 class="text-[20px] font-extrabold text-[#0e2942]">
-              Julie Chambers
+              Ina Farrelly
             </h3>
 
             <p class="mt-1 text-[16px] font-medium text-[#607992]">
@@ -1776,8 +1758,18 @@
             </span>
 
             <p class="mt-3 text-[13px] leading-relaxed text-slate-500">
-              Care for foot and lower-limb concerns.
-            </p>
+              Over 20 years’ experience helping people ....
+
+            <button
+              type="button"
+              onclick="openInaBioModal(event)"
+              onkeydown="event.stopPropagation()"
+              class="mt-3 rounded-full px-4 py-2 text-[14px] font-bold text-[#008f86] underline underline-offset-4 transition hover:text-[#006f68] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00a89d]"
+              aria-haspopup="dialog"
+              aria-controls="inaBioModal"
+            >
+              Read more
+            </button>
 
           </article>
         </div>
@@ -2305,6 +2297,86 @@
       </svg>
     </a>
 
+    <!-- ==================== INA FARRELLY BIOGRAPHY MODAL ==================== -->
+    <div
+      id="inaBioModal"
+      class="fixed inset-0 z-[60] hidden items-center justify-center bg-[#071827]/70 p-4 backdrop-blur-sm"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="inaBioTitle"
+      onclick="if (event.target === this) closeInaBioModal()"
+    >
+      <div
+        class="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl sm:p-9"
+      >
+        <button
+          id="inaBioClose"
+          type="button"
+          onclick="closeInaBioModal()"
+          class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full text-2xl font-bold text-slate-500 transition hover:bg-slate-100 hover:text-[#0e2942] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00a89d]"
+          aria-label="Close Ina Farrelly's biography"
+        >
+          &times;
+        </button>
+
+        <span
+          class="text-[14px] font-bold uppercase tracking-wider text-[#00a89d]"
+          >Meet our podiatrist</span
+        >
+        <h2
+          id="inaBioTitle"
+          class="mt-2 pr-10 text-2xl font-extrabold text-[#0e2942] sm:text-3xl"
+        >
+          Ina Farrelly
+        </h2>
+        <p class="mt-1 text-[16px] font-semibold text-[#607992]">
+          Podiatrist · Dip.PG, B.Sc, MRCPod · Society of Tissue Viability Trustee
+          · HCPC Registered
+        </p>
+
+        <div class="mt-6 space-y-4 text-[16px] leading-7 text-slate-600">
+          <p>
+            Ina has been in the profession for over 20 years and qualified in
+            New Zealand. She believes podiatry is about much more than treating
+            foot problems — it’s about helping people stay healthy, active and
+            independent, and continuing to enjoy the things that matter to
+            them.
+          </p>
+          <p>
+            She has developed a particular passion for biomechanics and the
+            relationship between foot health, movement and overall wellbeing.
+            Her approach is centred on understanding the whole person,
+            identifying the factors contributing to their concerns and
+            providing individualised care that supports both recovery and
+            long-term health.
+          </p>
+          <p>
+            Ina’s career has included working within the NHS and as part of the
+            East London Wound Team, which later became Accelerate CIC,
+            supporting patients with complex wounds and lymphoedema. Her
+            clinical experience spans biomechanics, musculoskeletal podiatry,
+            wound care and footwear. She has also been involved in research,
+            publications and professional education, and is proud to have
+            served as a Trustee of the Society of Tissue Viability. She wrote
+            <em>Navigating the Healthcare System</em> to support people in
+            dealing with a system that can be difficult to understand.
+          </p>
+          <p>
+            In private practice, Ina particularly values taking the time to get
+            to know patients, listen to their concerns and work together to
+            find the best approach for them. She aims to provide thoughtful,
+            friendly and personalised care, helping people understand their
+            foot health, prevent future problems and maintain comfort,
+            confidence and mobility.
+          </p>
+          <p class="font-semibold text-[#0e2942]">
+            Ultimately, Ina’s goal is to help you feel confident in your feet
+            and enjoy life to the fullest.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- ==================== APPOINTMENT ENQUIRY MODAL ==================== -->
     <div
       id="bookingModal"
@@ -2357,6 +2429,20 @@
         document.getElementById("bookingModal").classList.add("hidden");
       }
 
+      function openInaBioModal(event) {
+        event.stopPropagation();
+        const modal = document.getElementById("inaBioModal");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.getElementById("inaBioClose").focus();
+      }
+
+      function closeInaBioModal() {
+        const modal = document.getElementById("inaBioModal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+
       function handleFormSubmit(e) {
         e.preventDefault();
         document.getElementById("formSuccess").classList.remove("hidden");
@@ -2364,7 +2450,10 @@
       }
 
       document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeBookingModal();
+        if (e.key === "Escape") {
+          closeBookingModal();
+          closeInaBioModal();
+        }
       });
 
       function toggleMobileNav() {
