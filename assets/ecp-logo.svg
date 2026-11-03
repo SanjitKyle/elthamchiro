@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-10 h-10 select-none">
+  <!-- Navy Blue Circle Background -->
+  <circle cx="50" cy="50" r="48" fill="#0b2942" />
+  
+  <!-- Stylized Figure / Spine Sprout in White -->
+  <circle cx="50" cy="24" r="5.5" fill="#ffffff" />
+  
+  <path d="M 50 32 C 40 38 37 49 43 58 C 45.5 61.5 48 63 50 64 C 52 63 54.5 61.5 57 58 C 63 49 60 38 50 32 Z" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 50 35 Q 44.5 44 47.5 53" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M 50 35 Q 55.5 44 52.5 53" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" />
+  <circle cx="50" cy="44.5" r="2.2" fill="#ffffff" />
+  
+  <!-- ECP Monogram Text -->
+  <text x="50" y="83" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">ECP</text>
+</svg>

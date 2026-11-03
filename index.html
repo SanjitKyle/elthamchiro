@@ -1,0 +1,2946 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eltham Chiropractic &amp; Podiatry Clinic | London SE9</title>
+    <meta
+      name="description"
+      content="A multidisciplinary clinic in Eltham, south-east London, offering chiropractic, osteopathy, podiatry and nutrition."
+    />
+    <!-- Google Font: Sen (Geometric Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                navy: "#0e2942",
+                navyDark: "#0a2236",
+                navyDeep: "#071827",
+                teal: "#00a89d",
+                tealDark: "#00857c",
+                tealLight: "#e6f7f6",
+                sky: "#ebf6fb",
+              },
+            },
+            fontFamily: {
+              sans: ['"Sen"', "system-ui", "-apple-system", "sans-serif"],
+              serif: ['"Sen"', "system-ui", "-apple-system", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family:
+          "Sen",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body p {
+        font-size: 20px !important;
+      }
+
+      /* MacBook Air 15" (1440x932) & Modern Laptop Optimization */
+      @media screen and (min-width: 1280px) and (max-width: 1536px) {
+        .max-w-7xl {
+          max-width: 1340px;
+        }
+        .lg\:grid-cols-4 {
+          gap: 1.25rem;
+        }
+        #healthcare-hero .hero-photo-shape,
+        #healthcare-hero .hero-photo-outline,
+        #healthcare-hero .hero-photo-backdrop {
+          max-width: 460px;
+          max-height: 460px;
+        }
+      }
+
+      html.text-reveal-ready [data-text-reveal] {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translate3d(0, 22px, 0);
+        transition:
+          opacity 700ms cubic-bezier(0.2, 0.65, 0.3, 1),
+          filter 700ms cubic-bezier(0.2, 0.65, 0.3, 1),
+          transform 700ms cubic-bezier(0.2, 0.65, 0.3, 1);
+        transition-delay: var(--text-reveal-delay, 0ms);
+        will-change: opacity, filter, transform;
+      }
+
+      html.text-reveal-ready [data-text-reveal].is-text-revealed {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate3d(0, 0, 0);
+        will-change: auto;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html.text-reveal-ready [data-text-reveal],
+        html.text-reveal-ready [data-text-reveal].is-text-revealed {
+          opacity: 1;
+          filter: none;
+          transform: none;
+          transition: none;
+          will-change: auto;
+        }
+      }
+
+      .hero-photo-shape {
+        border-radius: 50%;
+      }
+
+      @media (min-width: 1024px) {
+        .hero-photo-shape.hero-photo-shape {
+          top: 20px;
+          right: auto;
+          left: 50%;
+          width: min(473px, 100%);
+          height: min(473px, 100%);
+          aspect-ratio: 1;
+          transform: translateX(-50%);
+        }
+
+        .hero-photo-outline.hero-photo-outline,
+        .hero-photo-backdrop.hero-photo-backdrop {
+          top: 20px;
+          right: auto;
+          left: 50%;
+          width: 473px;
+          height: 473px;
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+    <style>
+      .header-inner {
+        min-width: 0;
+      }
+
+      .main-desktop-nav {
+        min-width: 0;
+        flex-wrap: nowrap;
+        gap: clamp(0.9rem, 1.4vw, 2rem);
+      }
+
+      .main-desktop-nav > a,
+      .main-desktop-nav > div,
+      .main-desktop-nav > div > button,
+      .desktop-nav-review {
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 1400px) {
+        .main-desktop-nav {
+          gap: 1rem;
+        }
+      }
+
+      @media (max-width: 1280px) {
+        .main-desktop-nav {
+          gap: 0.75rem;
+          font-size: 15px;
+        }
+
+        .desktop-nav-review {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="w-full min-h-screen bg-white text-slate-800 antialiased overflow-x-hidden flex flex-col"
+  >
+    <!-- ==================== 1. TOP UTILITY BAR (DARK NAVY) ==================== -->
+    <div
+      class="w-full bg-[#0a2236] text-white text-[14px] sm:text-[16px] py-2 px-4 sm:px-6 lg:px-8 border-b border-slate-700/40"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3"
+      >
+        <!-- Left: Location, Phone, Opening Hours -->
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-300">
+          <div
+            class="flex items-center gap-1.5 hover:text-white transition-colors"
+          >
+            <svg
+              class="w-3.5 h-3.5 text-[#00a89d]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>10 Westmount Road, Eltham, London SE9 1JD</span>
+          </div>
+
+          <a
+            href="tel:02088592223"
+            class="flex items-center gap-1.5 hover:text-white transition-colors"
+          >
+            <i class="fa-solid fa-phone text-[#00a89d]" aria-hidden="true"></i>
+            <span>020 8859 2223</span>
+          </a>
+
+          <div
+            class="hidden md:flex items-center gap-1.5 hover:text-white transition-colors"
+          >
+            <svg
+              class="w-3.5 h-3.5 text-[#00a89d]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Service hours vary — see below</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 2. MAIN NAVIGATION (WHITE) ==================== -->
+    <header
+      class="w-full bg-white border-b border-slate-100 sticky top-0 z-50 shadow-xs"
+    >
+      <div
+        class="header-inner max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4"
+      >
+        <!-- Left: Logo & Clinic Name -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <!-- Logo Icon: Spine Circle -->
+          <div
+            class="w-10 h-10 rounded-full border-2 border-[#00a89d] p-1 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform bg-teal-50/40"
+          >
+            <svg
+              class="w-6 h-6 text-[#00a89d]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="4" r="2"></circle>
+              <path d="M12 6v14"></path>
+              <path d="M9.5 9c1.5 1 3.5 1 5 0"></path>
+              <path d="M8.5 13c2 1 5 1 7 0"></path>
+              <path d="M9.5 17c1.5 1 3.5 1 5 0"></path>
+            </svg>
+          </div>
+
+          <!-- Logo Text -->
+          <div class="flex flex-col">
+            <span
+              class="text-[#0e2942] font-black text-[17px] sm:text-[18px] tracking-tight leading-none"
+            >
+              Eltham Chiropractic &amp; Podiatry
+            </span>
+            <span
+              class="text-slate-400 font-medium italic text-[13px] sm:text-[14px] leading-tight mt-1"
+            >
+              Move Better. Feel Better. Live Better.
+            </span>
+          </div>
+        </a>
+
+        <!-- Center: Navigation Links (Strictly 4 Items: Home, About Us, Treatments dropdown, Contact) -->
+        <nav
+          class="main-desktop-nav hidden lg:flex flex-1 items-center justify-center gap-4 xl:gap-7 text-[16px] xl:text-[18px] font-semibold text-slate-700"
+        >
+          <!-- 1. Home -->
+          <a
+            href="index.html"
+            aria-current="page"
+            class="bg-[#0e2942] text-white px-4 py-1.5 rounded-full text-[16px] font-bold shadow-xs hover:bg-[#143a5c] transition-colors"
+          >
+            Home
+          </a>
+
+          <!-- 2. About Us -->
+          <a
+            href="about.html"
+            class="hover:text-[#00a89d] transition-colors py-2 font-medium"
+          >
+            About Us
+          </a>
+
+          <!-- 3. Treatments (ONLY Dropdown) -->
+          <div class="relative group py-2">
+            <button
+              class="hover:text-[#00a89d] transition-colors inline-flex items-center gap-1.5 font-medium group-hover:text-[#00a89d] cursor-pointer"
+            >
+              <span>Treatments</span>
+              <svg
+                class="w-3.5 h-3.5 text-slate-400 group-hover:text-[#00a89d] transition-transform duration-200 group-hover:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              class="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2 z-50 w-80"
+            >
+              <div
+                class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 overflow-hidden ring-1 ring-slate-900/5"
+              >
+                <div class="px-3 py-2 border-b border-slate-100/80 mb-1">
+                  <span
+                    class="text-[16px] font-bold text-slate-400 uppercase tracking-wider"
+                    >Our Specialist Care</span
+                  >
+                </div>
+
+                <a
+                  href="treatments.html#chiropractic"
+                  class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-teal-50/60 transition-colors group/item"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-teal-50 text-[#00a89d] flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-[#00a89d] group-hover/item:text-white transition-colors"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <span
+                      class="text-[16px] font-bold text-slate-800 group-hover/item:text-[#00a89d] transition-colors block"
+                      >Chiropractic Care</span
+                    >
+                    <span class="text-[14px] text-slate-400 leading-tight block"
+                      >Spinal alignment &amp; joint pain relief</span
+                    >
+                  </div>
+                </a>
+
+                <a
+                  href="treatments.html#podiatry"
+                  class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-teal-50/60 transition-colors group/item"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-teal-50 text-[#00a89d] flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-[#00a89d] group-hover/item:text-white transition-colors"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6v6l4 2" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span
+                      class="text-[16px] font-bold text-slate-800 group-hover/item:text-[#00a89d] transition-colors block"
+                      >Podiatry &amp; Chiropody</span
+                    >
+                    <span class="text-[14px] text-slate-400 leading-tight block"
+                      >Nails, skin, corns &amp; diabetic feet</span
+                    >
+                  </div>
+                </a>
+
+                <a
+                  href="treatments.html#gait-analysis"
+                  class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-teal-50/60 transition-colors group/item"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-teal-50 text-[#00a89d] flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-[#00a89d] group-hover/item:text-white transition-colors"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span
+                      class="text-[16px] font-bold text-slate-800 group-hover/item:text-[#00a89d] transition-colors block"
+                      >Digital Gait Analysis</span
+                    >
+                    <span class="text-[14px] text-slate-400 leading-tight block"
+                      >Dynamic foot pressure mapping</span
+                    >
+                  </div>
+                </a>
+
+                <a
+                  href="treatments.html#orthotics"
+                  class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-teal-50/60 transition-colors group/item"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-teal-50 text-[#00a89d] flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-[#00a89d] group-hover/item:text-white transition-colors"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M3 9h18M9 21V9" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span
+                      class="text-[16px] font-bold text-slate-800 group-hover/item:text-[#00a89d] transition-colors block"
+                      >Custom Foot Orthotics</span
+                    >
+                    <span class="text-[14px] text-slate-400 leading-tight block"
+                      >Precision arch &amp; posture correction</span
+                    >
+                  </div>
+                </a>
+
+                <a
+                  href="treatments.html#sports-injury"
+                  class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-teal-50/60 transition-colors group/item"
+                >
+                  <div
+                    class="w-8 h-8 rounded-lg bg-teal-50 text-[#00a89d] flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-[#00a89d] group-hover/item:text-white transition-colors"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M18 20V10M12 20V4M6 20v-6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span
+                      class="text-[16px] font-bold text-slate-800 group-hover/item:text-[#00a89d] transition-colors block"
+                      >Sports Injury &amp; Rehab</span
+                    >
+                    <span class="text-[14px] text-slate-400 leading-tight block"
+                      >Joint mobility &amp; muscle recovery</span
+                    >
+                  </div>
+                </a>
+
+                <div
+                  class="p-2 border-t border-slate-100 bg-slate-50/60 rounded-b-xl mt-1 text-center"
+                >
+                  <a
+                    href="treatments.html"
+                    class="text-[14px] font-bold text-[#00a89d] hover:text-[#00857c] inline-flex items-center gap-1.5"
+                  >
+                    <span>Explore All Treatments</span>
+                    <svg
+                      class="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Contact -->
+          <a
+            href="contact.html"
+            class="hover:text-[#00a89d] transition-colors py-2 font-medium"
+          >
+            Contact
+          </a>
+
+          <a
+            href="#"
+            class="desktop-nav-review hover:text-[#00a89d] transition-colors py-2 font-medium"
+          >
+            Leave A Review
+          </a>
+          <a
+            href="#"
+            class="desktop-nav-review hover:text-[#00a89d] transition-colors py-2 font-medium"
+          >
+            See Reviews
+          </a>
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <div class="flex items-center shrink-0">
+          <!-- Mobile Hamburger Button -->
+          <button
+            onclick="toggleMobileNav()"
+            class="lg:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Nav Drawer -->
+      <div
+        id="mobileNav"
+        class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-4 space-y-3"
+      >
+        <a
+          href="index.html"
+          aria-current="page"
+          class="block px-3 py-2 rounded-lg font-bold text-white bg-[#0e2942]"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
+          >About Us</a
+        >
+
+        <!-- Mobile Treatments Accordion -->
+        <div>
+          <button
+            onclick="toggleMobileTreatments()"
+            class="w-full flex items-center justify-between px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
+          >
+            <span>Treatments</span>
+            <span id="mobileTreatmentsIcon">▾</span>
+          </button>
+          <div
+            id="mobileTreatmentsSubmenu"
+            class="hidden pl-4 pr-2 py-2 space-y-1.5 text-[16px] text-slate-600 bg-slate-50/50 rounded-lg mt-1"
+          >
+            <a
+              href="treatments.html#chiropractic"
+              class="block py-1 hover:text-[#00a89d]"
+              >Chiropractic Care</a
+            >
+            <a
+              href="treatments.html#podiatry"
+              class="block py-1 hover:text-[#00a89d]"
+              >Podiatry &amp; Chiropody</a
+            >
+            <a
+              href="treatments.html#gait-analysis"
+              class="block py-1 hover:text-[#00a89d]"
+              >Digital Gait Analysis</a
+            >
+            <a
+              href="treatments.html#orthotics"
+              class="block py-1 hover:text-[#00a89d]"
+              >Custom Foot Orthotics</a
+            >
+            <a
+              href="treatments.html#sports-injury"
+              class="block py-1 hover:text-[#00a89d]"
+              >Sports Injury &amp; Rehab</a
+            >
+          </div>
+        </div>
+
+        <a
+          href="contact.html"
+          class="block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- ==================== 3. HERO BANNER SECTION ==================== -->
+    <!-- ==================== PREMIUM HEALTHCARE HERO BANNER (100% MATCH) ==================== -->
+    <section
+      id="healthcare-hero"
+      class="relative isolate overflow-hidden"
+      style="
+        background: linear-gradient(
+          105deg,
+          #f8fcfd 0%,
+          #f2fafc 48%,
+          #eaf8fb 100%
+        );
+      "
+    >
+      <!-- ====== TOP-LEFT CORNER: Organic wave blobs ====== -->
+      <svg
+        class="pointer-events-none absolute left-0 top-0 h-[82px] w-[150px] sm:h-[100px] sm:w-[190px]"
+        viewBox="0 0 200 100"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path d="M0 0H120C89 36 53 64 0 76Z" fill="#d9f3f6" opacity=".8" />
+        <path
+          d="M120 -5C91 28 59 58 -4 77"
+          stroke="#00a5a7"
+          stroke-width="1.4"
+        />
+        <path
+          d="M153 -8C119 27 91 47 39 69"
+          stroke="#bce9ee"
+          stroke-width="1"
+        />
+      </svg>
+
+      <!-- ====== BOTTOM-LEFT CORNER: Organic wave blob ====== -->
+      <svg
+        class="pointer-events-none absolute bottom-0 left-[42%] h-[118px] w-[280px] sm:h-[145px] sm:w-[350px] lg:h-[150px] lg:w-[380px]"
+        viewBox="0 0 400 160"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0 160C43 115 80 54 144 32C213 7 260 42 310 96C348 137 375 155 400 160Z"
+          fill="#cdeff3"
+          opacity=".76"
+        />
+        <path
+          d="M16 160C59 123 94 76 150 53"
+          stroke="#dff6f8"
+          stroke-width="2"
+        />
+      </svg>
+
+      <!-- ====== TOP-RIGHT: Decorative teal leaf/botanical elements ====== -->
+      <div
+        class="pointer-events-none absolute top-6 right-[42%] sm:top-8 sm:right-[40%] lg:top-4 lg:right-[44%] z-10"
+      >
+        <!-- Leaf cluster (3 small leaves) -->
+        <svg
+          class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+          viewBox="0 0 48 48"
+          fill="none"
+          aria-hidden="true"
+        >
+          <!-- Leaf 1 - top right -->
+          <path
+            d="M28 8 Q36 4, 38 12 Q40 20, 32 18 Q24 16, 28 8Z"
+            fill="#0e7a73"
+            opacity="0.7"
+          />
+          <!-- Leaf 2 - top left -->
+          <path
+            d="M20 6 Q14 2, 12 10 Q10 18, 18 16 Q26 14, 20 6Z"
+            fill="#0e7a73"
+            opacity="0.55"
+          />
+          <!-- Leaf 3 - bottom -->
+          <path
+            d="M24 18 Q20 26, 28 28 Q36 30, 32 22 Q28 14, 24 18Z"
+            fill="#0e7a73"
+            opacity="0.45"
+          />
+        </svg>
+      </div>
+
+      <!-- Another small leaf accent near image -->
+      <div
+        class="pointer-events-none absolute top-[15%] right-[38%] z-10 hidden lg:block"
+      >
+        <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path
+            d="M16 4 Q24 2, 26 10 Q28 18, 20 16 Q12 14, 16 4Z"
+            fill="#0e7a73"
+            opacity="0.5"
+          />
+          <path
+            d="M10 8 Q6 4, 4 12 Q2 20, 10 18 Q18 16, 10 8Z"
+            fill="#0e7a73"
+            opacity="0.35"
+          />
+        </svg>
+      </div>
+
+      <!-- ====== Soft radial glow behind right side ====== -->
+      <div
+        class="pointer-events-none absolute top-[10%] right-[-5%] h-[420px] w-[420px] rounded-full bg-[#d4f1f4]/25 blur-[80px]"
+      ></div>
+
+      <!-- ====== MAIN CONTAINER ====== -->
+      <div
+        class="relative mx-auto grid max-w-7xl 2xl:max-w-[1440px] grid-cols-1 items-center gap-8 px-5 pb-14 pt-12 sm:px-8 sm:pb-16 sm:pt-14 lg:min-h-[493px] lg:grid-cols-[1.08fr_0.92fr] lg:gap-8 xl:gap-12 lg:px-8 xl:px-10 lg:py-0"
+      >
+        <!-- ====== LEFT CONTENT ====== -->
+        <div class="relative z-10 max-w-[620px]">
+          <!-- Welcome Badge -->
+          <div
+            class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#00A99D]/10 bg-[#dff5f7]/75 px-3 py-1 shadow-sm backdrop-blur-sm"
+          >
+            <span
+              class="flex h-5 w-5 items-center justify-center rounded-full text-[#009F96]"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21c-.7-4.2-3.1-6.7-7-8.1 1.1 4.5 3.5 7.2 7 8.1Zm0-1c.8-4.1 3.2-6.5 7-7.9-1.1 4.4-3.5 7-7 7.9ZM12 17c-.4-5-2.6-8.7-6.5-11.3C6.3 11 8.5 14.8 12 17Zm0-3c.5-4.7 2.7-8.1 6.5-10.4C17.7 8.4 15.5 11.9 12 14Z"
+                />
+              </svg>
+            </span>
+            <span
+              class="text-[16px] font-extrabold uppercase tracking-[0.14em] text-[#007F86] sm:tracking-[0.16em]"
+            >
+              Welcome to Eltham Chiropractic &amp; Podiatry
+            </span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1
+            class="max-w-[600px] text-[clamp(2.7rem,4.6vw,3.75rem)] font-black leading-[0.98] tracking-[-0.04em] text-[#102D49]"
+          >
+            Your Health.
+            <span class="relative mt-1 block w-fit text-[#00A99D]">
+              Our Priority.
+              <svg
+                class="absolute -bottom-1 left-0 h-3 w-full text-[#00A99D]"
+                viewBox="0 0 420 14"
+                fill="none"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 10C105 3 258 3 416 9"
+                  stroke="currentColor"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+          </h1>
+
+          <!-- Supporting Heading -->
+          <h2
+            class="mt-6 max-w-[620px] text-[20px] font-extrabold leading-snug text-[#102D49] sm:text-[18px] lg:text-[20px]"
+          >
+            Expert Chiropractic &amp; Podiatry Care in South-East London
+          </h2>
+
+          <!-- Description -->
+          <p
+            class="mt-1.5 max-w-[520px] text-[14px] leading-[1.45] text-[#6B8299] sm:text-[16px]"
+            style="font-size: 16px"
+          >
+            A friendly, professional clinic offering chiropractic, osteopathy,
+            podiatry and nutrition under one roof.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div
+            class="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-5"
+          >
+            <!-- Primary CTA: Book an Appointment -->
+            <button
+              onclick="openBookingModal()"
+              class="group inline-flex min-h-[44px] items-center justify-center gap-2.5 rounded-full bg-[#00A99D] px-5 py-2.5 text-[16px] font-bold text-white shadow-[0_10px_25px_rgba(0,169,157,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#008F87] hover:shadow-[0_14px_30px_rgba(0,169,157,0.30)] cursor-pointer"
+            >
+              <svg
+                class="h-4 w-4 shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M16 3v4M8 3v4M3 10h18" />
+              </svg>
+              <span>Book an Appointment</span>
+              <svg
+                class="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div
+            class="mt-7 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7"
+          >
+            <div class="flex items-center gap-2.5">
+              <div
+                class="flex items-center gap-0.5 text-[#F5A623]"
+                aria-label="Rated 4.9 out of 5 stars"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5Z"
+                  />
+                </svg>
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5Z"
+                  />
+                </svg>
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5Z"
+                  />
+                </svg>
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5Z"
+                  />
+                </svg>
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5Z"
+                  />
+                </svg>
+              </div>
+              <div class="flex items-center gap-1.5 text-[18px] text-[#6B8299]">
+                <span class="font-extrabold text-[#102D49]">4.9 / 5.0</span>
+              </div>
+            </div>
+            <div class="hidden h-8 w-px bg-[#102D49]/12 sm:block"></div>
+            <div class="flex items-center gap-2.5">
+              <span
+                class="flex h-7 w-7 shrink-0 items-center justify-center text-[#009F96]"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="5" width="18" height="16" rx="2" />
+                  <path d="M16 3v4M8 3v4M3 10h18" />
+                </svg>
+              </span>
+              <p class="text-[16px] font-extrabold text-[#102D49]">
+                <span>15+ Years</span>
+                <span class="font-semibold">Clinical Experience</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ====== RIGHT IMAGE COMPOSITION ====== -->
+        <div
+          class="relative mx-auto w-full max-w-[500px] lg:h-[493px] lg:max-w-none lg:w-full"
+        >
+          <!-- Organic blob SVG background shape (teal outline + fill) -->
+          <svg
+            class="hero-photo-backdrop pointer-events-none absolute inset-0 h-full w-full"
+            viewBox="0 0 1000 1000"
+            fill="none"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <circle cx="500" cy="500" r="500" fill="#d2f0f3" opacity=".4" />
+          </svg>
+
+          <!-- Circular photo mask -->
+          <div class="relative z-10 lg:h-full">
+            <div
+              class="hero-photo-shape relative mx-auto aspect-square w-full max-w-[473px] overflow-hidden lg:absolute lg:inset-0 lg:mx-0 lg:max-w-none"
+            >
+              <img
+                src="assets/bannerimage.jfif"
+                alt="Diverse group of patients representing the community cared for by Eltham Chiropractic and Podiatry"
+                class="h-full w-full object-cover object-[center_15%]"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <svg
+            class="hero-photo-outline pointer-events-none absolute inset-0 z-20 h-full w-full"
+            viewBox="0 0 1000 1000"
+            fill="none"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="500"
+              cy="500"
+              r="497"
+              stroke="#00a5a7"
+              stroke-width="2"
+              vector-effect="non-scaling-stroke"
+            />
+          </svg>
+
+          <!-- Floating "Care for every stage of life" card (bottom-right) -->
+          <div
+            class="absolute bottom-4 right-4 z-30 flex max-w-[230px] items-center gap-3 rounded-2xl border border-white/70 bg-white/95 p-3 shadow-[0_16px_44px_rgba(16,45,73,0.14)] backdrop-blur-md sm:right-6 sm:rounded-[18px] sm:p-3.5 lg:bottom-16 lg:right-7"
+          >
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#E2F7F6] text-[#009F96] sm:h-12 sm:w-12"
+            >
+              <svg
+                class="h-7 w-7 sm:h-8 sm:w-8"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="24" cy="9" r="4" />
+                <circle cx="11" cy="18" r="3.5" />
+                <circle cx="37" cy="18" r="3.5" />
+                <path d="M17 35v-8a7 7 0 0 1 14 0v8M21 35v7M27 35v7" />
+                <path d="M5 39v-8a6 6 0 0 1 12 0v3M31 34v-3a6 6 0 0 1 12 0v8" />
+                <path d="M19 16c1.4-1.5 3.1-2.2 5-2.2s3.6.7 5 2.2" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-[16px] font-extrabold leading-snug text-[#102D49]">
+                Care for every
+                <span class="block">stage of life</span>
+              </p>
+            </div>
+            <!-- Small decorative leaf accents on the card -->
+            <svg
+              class="absolute -top-3 -right-2 w-6 h-6 text-[#00A99D]"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              opacity="0.5"
+              aria-hidden="true"
+            >
+              <path d="M12 2 Q18 1, 20 7 Q22 13, 16 12 Q10 11, 12 2Z" />
+            </svg>
+            <svg
+              class="absolute -bottom-2 -left-2 w-5 h-5 text-[#00A99D]"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              opacity="0.4"
+              aria-hidden="true"
+            >
+              <path d="M12 22 Q6 23, 4 17 Q2 11, 8 12 Q14 13, 12 22Z" />
+            </svg>
+            <svg
+              class="absolute right-2 top-1/2 h-8 w-5 -translate-y-1/2 text-[#00A99D]"
+              viewBox="0 0 20 32"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M5 6 13 3M5 16h10M5 26l8 3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom subtle white fade for transition -->
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 h-4 w-full bg-gradient-to-t from-white/70 to-transparent sm:h-5"
+      ></div>
+    </section>
+    <!-- ==================== END HEALTHCARE HERO BANNER ==================== -->
+
+    <!-- ==================== 4. UNDER BANNER SECTION (UNIFIED 5-FEATURE RIBBON CARD) ==================== -->
+    <section class="relative z-20 w-full px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="bg-white rounded-2xl shadow-lg border border-slate-100 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 py-2 sm:py-3 px-2"
+        >
+          <!-- 1: Trusted Care -->
+          <div
+            class="flex flex-col items-center text-center p-3 sm:p-4 hover:scale-105 transition-transform"
+          >
+            <div
+              class="w-10 h-10 rounded-xl border border-teal-200/60 bg-teal-50/60 text-[#00a89d] flex items-center justify-center mb-2"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h4
+              class="font-extrabold text-[16px] sm:text-[18px] text-[#0e2942]"
+            >
+              Trusted Care
+            </h4>
+            <p class="text-[16px] sm:text-[14px] text-slate-500 mt-0.5">
+              Professional &amp; Caring
+            </p>
+          </div>
+
+          <!-- 2: Personalised Treatment -->
+          <div
+            class="flex flex-col items-center text-center p-3 sm:p-4 hover:scale-105 transition-transform"
+          >
+            <div
+              class="w-10 h-10 rounded-xl border border-teal-200/60 bg-teal-50/60 text-[#00a89d] flex items-center justify-center mb-2"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h4
+              class="font-extrabold text-[16px] sm:text-[18px] text-[#0e2942]"
+            >
+              Personalised Treatment
+            </h4>
+            <p class="text-[16px] sm:text-[14px] text-slate-500 mt-0.5">
+              Tailored to Your Needs
+            </p>
+          </div>
+
+          <!-- 3: Convenient Location -->
+          <div
+            class="flex flex-col items-center text-center p-3 sm:p-4 hover:scale-105 transition-transform"
+          >
+            <div
+              class="w-10 h-10 rounded-xl border border-teal-200/60 bg-teal-50/60 text-[#00a89d] flex items-center justify-center mb-2"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h4
+              class="font-extrabold text-[16px] sm:text-[18px] text-[#0e2942]"
+            >
+              Convenient Location
+            </h4>
+            <p class="text-[16px] sm:text-[14px] text-slate-500 mt-0.5">
+              in Eltham, SE9
+            </p>
+          </div>
+
+          <!-- 4: Appointment enquiries -->
+          <div
+            class="flex flex-col items-center text-center p-3 sm:p-4 hover:scale-105 transition-transform"
+          >
+            <div
+              class="w-10 h-10 rounded-xl border border-teal-200/60 bg-teal-50/60 text-[#00a89d] flex items-center justify-center mb-2"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h4
+              class="font-extrabold text-[16px] sm:text-[18px] text-[#0e2942]"
+            >
+              Appointment enquiries
+            </h4>
+            <p class="text-[16px] sm:text-[14px] text-slate-500 mt-0.5">
+              Call reception
+            </p>
+          </div>
+
+          <!-- 5: Better Health -->
+          <div
+            class="flex flex-col items-center text-center p-3 sm:p-4 hover:scale-105 transition-transform col-span-2 sm:col-span-1"
+          >
+            <div
+              class="w-10 h-10 rounded-xl border border-teal-200/60 bg-teal-50/60 text-[#00a89d] flex items-center justify-center mb-2"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+            </div>
+            <h4
+              class="font-extrabold text-[16px] sm:text-[18px] text-[#0e2942]"
+            >
+              Better Health
+            </h4>
+            <p class="text-[16px] sm:text-[14px] text-slate-500 mt-0.5">
+              A Healthier You
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. OUR SERVICES SECTION ==================== -->
+    <section
+      id="treatments"
+      class="relative w-full scroll-mt-20 overflow-hidden border-b border-slate-100 py-12 sm:scroll-mt-24 sm:py-14"
+      style="
+        background:
+          radial-gradient(
+            circle at 7% 0%,
+            rgba(145, 226, 232, 0.24),
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at 92% 0%,
+            rgba(145, 226, 232, 0.2),
+            transparent 28%
+          ),
+          #f7fbfd;
+      "
+    >
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -left-[124px] -top-[132px] h-[280px] w-[280px] rounded-full bg-[#ddf5f6]/80"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -left-[103px] -top-[111px] h-[238px] w-[238px] rounded-full border border-white/90"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -left-[85px] -top-[93px] h-[202px] w-[202px] rounded-full border border-[#c6edf0]/80"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-[124px] -top-[132px] h-[280px] w-[280px] rounded-full bg-[#ddf5f6]/75"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-[103px] -top-[111px] h-[238px] w-[238px] rounded-full border border-white/90"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-[85px] -top-[93px] h-[202px] w-[202px] rounded-full border border-[#c6edf0]/80"
+      ></div>
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <span
+            class="inline-flex rounded-full border border-[#79d8d6] px-4 py-1 text-[18px] font-extrabold uppercase tracking-[0.24em] text-[#008f86]"
+          >
+            Our Services
+          </span>
+          <h2
+            class="mt-2 font-serif text-2xl font-semibold leading-tight tracking-tight text-[#0e2942] sm:text-3xl lg:text-4xl"
+          >
+            Comprehensive Care for a Healthier You
+          </h2>
+          <p
+            class="mx-auto mt-2 max-w-2xl text-[16px] leading-relaxed text-slate-600 sm:text-[18px]"
+            style="font-size: 20px"
+          >
+            From pain relief to long-term wellness, we're here to help you move
+            better and feel your best.
+          </p>
+        </div>
+
+        <div
+          class="mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"
+        >
+          <article
+            id="service-chiropractic"
+            class="group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage1.jfif"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >01</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[20px] font-semibold leading-tight">
+                Chiropractic
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Musculoskeletal care for movement concerns.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+
+          <article
+            id="service-podiatry"
+            class="group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage2.jfif"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >02</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[22px] font-semibold leading-tight">
+                Podiatry &amp; Foot Care
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Expert care for feet and lower limbs.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+
+          <article
+            id="service-nutrition"
+            class="group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage3.jpg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >03</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[20px] font-semibold leading-tight">
+                Nutrition
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Personalised nutrition advice.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+
+          <article
+            id="service-osteopathy"
+            class="group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage4.jfif"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >04</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[20px] font-semibold leading-tight">
+                Osteopathy
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Hands-on care for movement concerns.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. ABOUT OUR CLINIC ==================== -->
+    <section
+      id="about"
+      class="w-full scroll-mt-20 bg-[#e8f5f6] sm:scroll-mt-24"
+    >
+      <div class="relative isolate w-full overflow-hidden bg-[#e8f5f6]">
+        <div
+          class="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-9 px-5 py-12 sm:gap-10 sm:px-8 sm:py-14 lg:grid-cols-[1.08fr_.92fr] lg:gap-14 lg:px-[5vw] lg:py-[76px]"
+        >
+          <!-- Clinic Photo with Services Badge -->
+          <div class="relative px-1 sm:px-3 lg:px-0">
+            <div
+              class="relative overflow-hidden rounded-[1.65rem] border-2 border-[#76d8d6] bg-slate-100 p-1 shadow-[0_16px_30px_rgba(14,110,116,0.16)] sm:rounded-[2rem]"
+            >
+              <img
+                src="assets/maineltham-chiro.jpg"
+                alt="Treatment room at Eltham Chiropractic and Podiatry Clinic"
+                loading="lazy"
+                class="aspect-[1.3] w-full rounded-[1.4rem] object-cover"
+              />
+            </div>
+            <div
+              aria-hidden="true"
+              class="absolute right-0 top-[57%] h-24 w-7 -translate-y-1/2 bg-[#008f86] sm:right-1 sm:h-28 sm:w-8"
+              style="
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+              "
+            ></div>
+            <div
+              class="absolute right-0 top-1/2 flex h-[88px] w-[88px] -translate-y-1/2 flex-col items-center justify-center rounded-full border-[5px] border-white bg-[#008f86] text-center text-white shadow-[0_10px_22px_rgba(14,41,66,0.22)] sm:-right-1 sm:h-[112px] sm:w-[112px] sm:border-[6px]"
+            >
+              <span class="text-[18px] font-medium sm:text-[18px]">Four</span>
+              <span class="text-[18px] font-extrabold leading-tight sm:text-xl"
+                >Services</span
+              >
+              <span class="text-[8px] font-semibold sm:text-[18px]"
+                >one clinic</span
+              >
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="flex flex-col items-start lg:pr-5">
+            <span
+              class="inline-flex items-center gap-2 text-[18px] font-extrabold uppercase tracking-[0.2em] text-[#008f86] sm:text-[18px]"
+            >
+              <span class="h-px w-8 bg-[#79d8d6]"></span>
+              About our clinic
+              <span class="h-px w-8 bg-[#79d8d6]"></span>
+            </span>
+            <h2
+              class="mt-3 max-w-2xl font-serif text-4xl font-medium leading-[0.98] tracking-[-0.045em] text-[#0e2942] sm:text-5xl lg:text-[clamp(3.55rem,4.2vw,4.5rem)]"
+            >
+              Expert Care. Lasting Results.
+            </h2>
+            <p
+              class="mt-5 max-w-2xl text-[13px] leading-[1.7] text-slate-600 sm:text-[14px] lg:text-[16px]"
+            >
+              At Eltham Chiropractic &amp; Podiatry, we believe in treating the
+              whole person, not just the symptoms. Our multidisciplinary team is
+              committed to helping you achieve optimal health, mobility and
+              wellbeing.
+            </p>
+
+            <div
+              class="mt-5 space-y-3 text-[13px] font-semibold text-[#0e2942] sm:text-[14px]"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[16px] font-black text-[#008f86]"
+                  >✓</span
+                >
+                <span class="text-[18px]"
+                  >Experienced &amp; Qualified Practitioners</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[16px] font-black text-[#008f86]"
+                  >✓</span
+                >
+                <span class="text-[18px]">Personalised Treatment Plans</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[16px] font-black text-[#008f86]"
+                  >✓</span
+                >
+                <span class="text-[18px]">Holistic Approach to Health</span>
+              </div>
+            </div>
+
+            <button
+              onclick="openBookingModal()"
+              class="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#00a89d] px-6 py-3 text-[13px] font-bold text-white shadow-[0_8px_18px_rgba(0,168,157,0.2)] transition-all hover:bg-[#00857c] hover:shadow-[0_10px_22px_rgba(0,168,157,0.28)] sm:text-[16px]"
+            >
+              <span>Learn More About Us</span>
+              <span aria-hidden="true">➜</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. OUR TREATMENTS (100% MATCHED TO REFERENCE) ==================== -->
+    <section
+      id="treatment-options"
+      class="relative w-full bg-white py-16 sm:py-20 lg:py-24 overflow-hidden border-b border-slate-100"
+    >
+      <!-- Top-Right Organic Corner Wave Decoration -->
+      <div
+        class="pointer-events-none absolute top-0 right-0 w-80 sm:w-96 lg:w-[420px] h-48 sm:h-60 overflow-hidden z-0"
+      >
+        <svg
+          viewBox="0 0 420 240"
+          fill="none"
+          class="w-full h-full"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M120 0 C 180 35, 240 10, 320 85 C 360 115, 390 100, 420 130 L 420 0 Z"
+            fill="#d1f9f2"
+            fill-opacity="0.45"
+          />
+          <path
+            d="M100 0 C 170 32, 230 12, 310 80 C 355 110, 385 98, 420 125"
+            stroke="#72e2d5"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M170 0 C 230 25, 280 8, 360 70 C 390 90, 405 85, 420 100"
+            stroke="#99f6e4"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-dasharray="4 4"
+          />
+        </svg>
+      </div>
+
+      <!-- Bottom-Left Organic Corner Wave Decoration -->
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 w-80 sm:w-96 lg:w-[420px] h-48 sm:h-60 overflow-hidden z-0"
+      >
+        <svg
+          viewBox="0 0 420 240"
+          fill="none"
+          class="w-full h-full"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M 0 240 L 0 90 C 80 130, 130 80, 220 170 C 280 220, 330 200, 420 240 Z"
+            fill="#dcfce7"
+            fill-opacity="0.35"
+          />
+          <path
+            d="M 0 240 L 0 130 C 100 170, 150 120, 240 200 C 300 230, 350 220, 420 240 Z"
+            fill="#bbf2e9"
+            fill-opacity="0.55"
+          />
+          <path
+            d="M 0 120 C 100 160, 150 110, 240 190 C 300 225, 350 215, 420 235"
+            stroke="#5eead4"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 items-center"
+        >
+          <!-- Left: Text & Features (4 cols) -->
+          <div class="lg:col-span-4 flex flex-col items-start justify-center">
+            <!-- Pill Tag & Line -->
+            <div class="flex items-center gap-3 mb-5">
+              <span
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-200/90 bg-teal-50/80 text-[#009e93] text-[14px] font-bold uppercase tracking-wider shadow-xs"
+              >
+                <span class="w-2 h-2 rounded-full bg-[#009e93]"></span>
+                OUR TREATMENTS
+              </span>
+              <span class="w-16 h-px bg-slate-200"></span>
+            </div>
+
+            <!-- Main Heading -->
+            <h2
+              class="text-3xl sm:text-4xl lg:text-[46px] font-black tracking-tight leading-[1.08] mb-4"
+            >
+              <span class="text-[#0e2942] block">Care that</span>
+              <span class="text-[#009e93] block">moves you forward.</span>
+            </h2>
+
+            <!-- Subtitle -->
+            <p
+              class="text-slate-600 text-[16px] sm:text-[18px] leading-relaxed mb-7 max-w-md font-normal"
+            >
+              We offer a wide range of chiropractic, osteopathy and podiatry
+              services to alleviate pain, restore mobility, and keep you feeling
+              great.
+            </p>
+
+            <!-- 3 Bullet Features with Round Icon Badges -->
+            <div class="space-y-4 mb-8 w-full max-w-md">
+              <!-- Bullet 1: Fast, targeted pain relief -->
+              <div class="flex items-center gap-3.5">
+                <div
+                  class="w-8 h-8 rounded-full bg-teal-50/90 border border-teal-200/80 flex items-center justify-center text-[#009e93] shrink-0 shadow-xs"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="text-[16px] sm:text-[18px] font-semibold text-slate-700"
+                  >Fast, targeted pain relief</span
+                >
+              </div>
+
+              <!-- Bullet 2: Gentle, evidence-based clinical care -->
+              <div class="flex items-center gap-3.5">
+                <div
+                  class="w-8 h-8 rounded-full bg-teal-50/90 border border-teal-200/80 flex items-center justify-center text-[#009e93] shrink-0 shadow-xs"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="text-[16px] sm:text-[18px] font-semibold text-slate-700"
+                  >Gentle, evidence-based clinical care</span
+                >
+              </div>
+
+              <!-- Bullet 3: Bespoke rehabilitation & prevention -->
+              <div class="flex items-center gap-3.5">
+                <div
+                  class="w-8 h-8 rounded-full bg-teal-50/90 border border-teal-200/80 flex items-center justify-center text-[#009e93] shrink-0 shadow-xs"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="text-[16px] sm:text-[18px] font-semibold text-slate-700"
+                  >Bespoke rehabilitation &amp; prevention</span
+                >
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button
+              onclick="openBookingModal('Treatments')"
+              class="px-7 py-3.5 rounded-full bg-[#009e93] hover:bg-[#00877d] text-white font-bold text-[16px] sm:text-[18px] shadow-[0_8px_20px_rgba(0,158,147,0.3)] hover:shadow-[0_12px_24px_rgba(0,158,147,0.4)] hover:-translate-y-0.5 transition-all flex items-center gap-2.5 group cursor-pointer"
+            >
+              <span>Book a Treatment</span>
+              <svg
+                class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Right: 6 Exact Treatment Visual Cards Grid (8 cols) -->
+          <div
+            class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5"
+          >
+            <!-- Card 1: Back Pain Relief -->
+            <div
+              onclick="openBookingModal('Back Pain Relief')"
+              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+            >
+              <img
+                src="assets/backpain.jfif"
+                alt="Back Pain Relief"
+                loading="lazy"
+                decoding="async"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
+              >
+                <span>Back Pain Relief</span
+                ><span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
+                  >→</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 2: Neck Pain Treatment -->
+            <div
+              onclick="openBookingModal('Neck Pain Treatment')"
+              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+            >
+              <img
+                src="assets/neckpain.jfif"
+                alt="Neck Pain Treatment"
+                loading="lazy"
+                decoding="async"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
+              >
+                <span>Neck Pain Treatment</span
+                ><span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
+                  >→</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 3: Sports Injury Rehab -->
+            <div
+              onclick="openBookingModal('Sports Injury Rehab')"
+              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+            >
+              <img
+                src="assets/sportinjury.jfif"
+                alt="Sports Injury Rehab"
+                loading="lazy"
+                decoding="async"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
+              >
+                <span>Sports Injury Rehab</span
+                ><span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
+                  >→</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 4: Foot Care Solutions -->
+            <div
+              onclick="openBookingModal('Foot Care Solutions')"
+              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+            >
+              <img
+                src="assets/footcare.jfif"
+                alt="Foot Care Solutions"
+                loading="lazy"
+                decoding="async"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
+              >
+                <span>Foot Care Solutions</span
+                ><span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
+                  >→</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 5: Posture Correction -->
+            <div
+              onclick="openBookingModal('Posture Correction')"
+              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+            >
+              <img
+                src="assets/posture.jpg"
+                alt="Posture Correction"
+                loading="lazy"
+                decoding="async"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
+              >
+                <span>Posture Correction</span
+                ><span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
+                  >→</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 6: Wellness & Prevention -->
+            <div
+              onclick="openBookingModal('Wellness & Prevention')"
+              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+            >
+              <img
+                src="assets/wellness.jfif"
+                alt="Wellness & Prevention"
+                loading="lazy"
+                decoding="async"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
+              ></div>
+              <div
+                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
+              >
+                <span>Wellness &amp; Prevention</span
+                ><span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
+                  >→</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. OUR CLINICAL TEAM ==================== -->
+
+    <!-- ==================== 8. OUR CLINICAL TEAM ==================== -->
+    <!-- ==================== 8. OUR CLINICAL TEAM ==================== -->
+    <!-- ==================== 8. OUR CLINICAL TEAM ==================== -->
+    <section
+      id="team"
+      class="relative w-full overflow-hidden bg-[#f8fcfd] pt-16 pb-8 font-sans sm:pt-20 sm:pb-10"
+    >
+      <!-- Background Decorations -->
+      <div
+        class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-[#dff8f7] opacity-70 blur-3xl"
+      ></div>
+      <div
+        class="pointer-events-none absolute top-40 -right-32 h-80 w-80 rounded-full bg-[#e2f5f7] opacity-70 blur-3xl"
+      ></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Section Heading -->
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <div class="mb-4 inline-flex items-center gap-3">
+            <span class="h-[2px] w-10 bg-[#00a89d]"></span>
+            <span
+              class="text-[16px] font-extrabold uppercase tracking-[0.25em] text-[#00a89d]"
+            >
+              Our Team
+            </span>
+            <span class="h-[2px] w-10 bg-[#00a89d]"></span>
+          </div>
+
+          <h2
+            class="text-3xl font-black tracking-tight text-[#0e2942] sm:text-4xl lg:text-5xl"
+          >
+            Meet Our Clinical Team
+          </h2>
+
+          <p
+            class="mx-auto mt-4 max-w-2xl text-[16px] leading-relaxed text-[#607992] sm:text-[20px]"
+          >
+            A dedicated team of experienced professionals committed to your
+            health.
+          </p>
+
+          <div
+            class="mx-auto mt-5 h-1 w-24 rounded-full bg-gradient-to-r from-[#00a89d] to-[#6ee7df]"
+          ></div>
+        </div>
+
+        <!-- ==================== TEAM GRID ==================== -->
+        <div
+          class="grid grid-cols-1 items-start gap-5 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <!-- Richard Frost -->
+          <article
+            onclick="openBookingModal('Chiropractic')"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openBookingModal('Chiropractic');
+              }
+            "
+            tabindex="0"
+            role="button"
+            aria-label="Book an appointment with Richard Frost"
+            class="group flex cursor-pointer flex-col items-center rounded-3xl border border-slate-100 bg-white px-5 py-7 text-center shadow-[0_5px_25px_rgba(14,41,66,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-[#9ce6e2] hover:shadow-[0_18px_40px_rgba(0,168,157,0.13)]"
+          >
+            <div class="relative mb-5 h-28 w-28 shrink-0">
+              <div
+                class="absolute -inset-1 rounded-full border-2 border-[#71ded8] transition-transform duration-500 group-hover:scale-110"
+              ></div>
+
+              <img
+                src="assets/richard-frost-chiropractor.jpg"
+                alt="Richard Frost, Principal Chiropractor"
+                loading="lazy"
+                decoding="async"
+                class="relative h-full w-full rounded-full border-4 border-white object-cover object-top shadow-md"
+              />
+            </div>
+
+            <h3 class="text-[20px] font-extrabold text-[#0e2942]">
+              Richard Frost
+            </h3>
+
+            <p class="mt-1 text-[16px] font-medium text-[#607992]">
+              (Principal) Chiropractor
+            </p>
+
+            <span
+              class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
+            >
+              <span class="text-[20px]">✦</span>
+              Spinal &amp; Joint Care
+            </span>
+
+            <p class="mt-3 text-[13px] leading-relaxed text-slate-500">
+              Helps reduce pain, improve mobility and restore balance.
+            </p>
+
+          </article>
+
+          <!-- Selina Begum -->
+          <article
+            onclick="openBookingModal('Podiatry')"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openBookingModal('Podiatry');
+              }
+            "
+            tabindex="0"
+            role="button"
+            aria-label="Book an appointment with Selina Begum"
+            class="group flex cursor-pointer flex-col items-center rounded-3xl border border-slate-100 bg-white px-5 py-7 text-center shadow-[0_5px_25px_rgba(14,41,66,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-[#9ce6e2] hover:shadow-[0_18px_40px_rgba(0,168,157,0.13)]"
+          >
+            <div class="relative mb-5 h-28 w-28 shrink-0">
+              <div
+                class="absolute -inset-1 rounded-full border-2 border-[#71ded8] transition-transform duration-500 group-hover:scale-110"
+              ></div>
+
+              <img
+                src="assets/selina-begum-podiatrist.jpg"
+                alt="Selina Begum, Podiatrist"
+                loading="lazy"
+                decoding="async"
+                class="relative h-full w-full rounded-full border-4 border-white object-cover object-top shadow-md"
+              />
+            </div>
+
+            <h3 class="text-[20px] font-extrabold text-[#0e2942]">
+              Selina Begum
+            </h3>
+
+            <p class="mt-1 text-[16px] font-medium text-[#607992]">
+              Podiatrist
+            </p>
+
+            <span
+              class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
+            >
+              <span class="text-[20px]">♧</span>
+              Foot &amp; Ankle Care
+            </span>
+
+            <p class="mt-3 text-[13px] leading-relaxed text-slate-500">
+              Specialises in foot, ankle and lower-limb care.
+            </p>
+
+          </article>
+
+          <!-- Stuart Dowden -->
+          <article
+            onclick="openBookingModal('Osteopathy')"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openBookingModal('Osteopathy');
+              }
+            "
+            tabindex="0"
+            role="button"
+            aria-label="Book an appointment with Stuart Dowden"
+            class="group flex cursor-pointer flex-col items-center rounded-3xl border border-slate-100 bg-white px-5 py-7 text-center shadow-[0_5px_25px_rgba(14,41,66,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-[#9ce6e2] hover:shadow-[0_18px_40px_rgba(0,168,157,0.13)]"
+          >
+            <div class="relative mb-5 h-28 w-28 shrink-0">
+              <div
+                class="absolute -inset-1 rounded-full border-2 border-[#71ded8] transition-transform duration-500 group-hover:scale-110"
+              ></div>
+
+              <img
+                src="assets/stuart-dowden-eltham-chiropractic.jpg"
+                alt="Stuart Dowden, Osteopath"
+                loading="lazy"
+                decoding="async"
+                class="relative h-full w-full rounded-full border-4 border-white object-cover object-top shadow-md"
+              />
+            </div>
+
+            <h3 class="text-[20px] font-extrabold text-[#0e2942]">
+              Stuart Dowden
+            </h3>
+
+            <p class="mt-1 text-[16px] font-medium text-[#607992]">Osteopath</p>
+
+            <span
+              class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
+            >
+              <span class="text-[20px]">✣</span>
+              Musculoskeletal Care
+            </span>
+
+            <p class="mt-3 text-[13px] leading-relaxed text-slate-500">
+              Hands-on care to improve movement and support healing.
+            </p>
+
+          </article>
+
+          <!-- Julie Chambers -->
+          <article
+            onclick="openBookingModal('Podiatry')"
+            onkeydown="
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openBookingModal('Podiatry');
+              }
+            "
+            tabindex="0"
+            role="button"
+            aria-label="Book an appointment with Julie Chambers"
+            class="group flex cursor-pointer flex-col items-center rounded-3xl border border-slate-100 bg-white px-5 py-7 text-center shadow-[0_5px_25px_rgba(14,41,66,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-[#9ce6e2] hover:shadow-[0_18px_40px_rgba(0,168,157,0.13)]"
+          >
+            <div class="relative mb-5 h-28 w-28 shrink-0">
+              <div
+                class="absolute -inset-1 rounded-full border-2 border-[#71ded8] transition-transform duration-500 group-hover:scale-110"
+              ></div>
+
+              <img
+                src="assets/Julie-Podiatrist.jpg"
+                alt="Julie Chambers, Podiatrist"
+                loading="lazy"
+                decoding="async"
+                class="relative h-full w-full rounded-full border-4 border-white object-cover object-top shadow-md"
+              />
+            </div>
+
+            <h3 class="text-[20px] font-extrabold text-[#0e2942]">
+              Julie Chambers
+            </h3>
+
+            <p class="mt-1 text-[16px] font-medium text-[#607992]">
+              Podiatrist
+            </p>
+
+            <span
+              class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
+            >
+              <span class="text-[20px]">♧</span>
+              Foot &amp; Ankle Care
+            </span>
+
+            <p class="mt-3 text-[13px] leading-relaxed text-slate-500">
+              Care for foot and lower-limb concerns.
+            </p>
+
+          </article>
+        </div>
+        <!-- END TEAM GRID -->
+
+        <!-- END BOOKING CTA CARD -->
+      </div>
+
+      <!-- Bottom Decorative Accent -->
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-transparent via-[#00b8ad]/50 to-transparent"
+      ></div>
+    </section>
+
+    <!-- ==================== 9. AREAS WE SERVICE ==================== -->
+    <section class="relative overflow-hidden bg-[#f4fbfb] py-20 lg:py-24">
+      <!-- Background decoration -->
+      <div
+        class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#00a89d]/[0.04] blur-3xl"
+      ></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+        <!-- Section heading -->
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <span
+            class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#00a89d]/20 bg-white px-4 py-2 text-[14px] font-extrabold uppercase tracking-[0.18em] text-[#00a89d]"
+          >
+            <span class="h-2 w-2 rounded-full bg-[#00a89d]"></span>
+            Visit &amp; Learn More
+          </span>
+
+          <h2
+            class="text-3xl font-extrabold leading-tight tracking-tight text-[#0e2942] sm:text-4xl lg:text-5xl"
+          >
+            Google Profile &amp;
+            <span class="text-[#00a89d]">Frequently Asked Questions</span>
+          </h2>
+
+          <p
+            class="mx-auto mt-5 max-w-2xl text-[16px] leading-7 text-slate-600 sm:text-[20px]"
+          >
+            Find our Eltham clinic on Google and get quick answers about our
+            services, location, hours and appointments.
+          </p>
+        </div>
+
+        <div class="grid items-start gap-8 lg:grid-cols-2">
+          <section
+            aria-labelledby="google-profile-heading"
+            class="overflow-hidden rounded-[1.6rem] border border-[#d8eeee] bg-white p-3 shadow-[0_20px_60px_rgba(14,41,66,0.10)] sm:p-5"
+          >
+            <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <h3
+                  id="google-profile-heading"
+                  class="text-xl font-extrabold text-[#0e2942] sm:text-2xl"
+                >
+                  Eltham Chiropractic &amp; Podiatry
+                </h3>
+                <p class="mt-1 text-[16px] text-slate-500">
+                  10 Westmount Road, Eltham, London SE9 1JD
+                </p>
+              </div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Eltham+Chiropractic+%26+Podiatry%2C+10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#00a89d] px-4 py-2 text-sm font-bold text-white transition hover:bg-[#00857c]"
+              >
+                View Google profile
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </div>
+            <iframe
+              title="Google Maps profile and location for Eltham Chiropractic &amp; Podiatry"
+              src="https://maps.google.com/maps?q=Eltham%20Chiropractic%20%26%20Podiatry%2C%2010%20Westmount%20Road%2C%20Eltham%2C%20London%20SE9%201JD&amp;z=15&amp;output=embed"
+              class="h-[360px] w-full rounded-[1.2rem] border-0 sm:h-[430px]"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </section>
+
+          <section aria-labelledby="clinic-faq-heading">
+            <div class="mb-5">
+              <span
+                class="text-[14px] font-extrabold uppercase tracking-[0.17em] text-[#00a89d]"
+                >Helpful information</span
+              >
+              <h3
+                id="clinic-faq-heading"
+                class="mt-2 text-2xl font-extrabold text-[#0e2942] sm:text-3xl"
+              >
+                Frequently Asked Questions
+              </h3>
+            </div>
+
+            <div class="space-y-3">
+              <details
+                class="group rounded-2xl border border-[#d8eeee] bg-white p-4 shadow-sm sm:p-5"
+                open
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0e2942] marker:hidden"
+                >
+                  What services does the clinic offer?
+                  <span
+                    class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6f7f6] text-[#008f86]"
+                    aria-hidden="true"
+                  ></span>
+                </summary>
+                <p class="!text-[16px] mt-3 leading-relaxed text-slate-600">
+                  The clinic offers chiropractic, podiatry and chiropody,
+                  osteopathy, and nutrition services. Contact reception if you
+                  need help finding the right service.
+                </p>
+              </details>
+
+              <details
+                class="group rounded-2xl border border-[#d8eeee] bg-white p-4 shadow-sm sm:p-5"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0e2942] marker:hidden"
+                >
+                  How do I enquire about an appointment?
+                  <span
+                    class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6f7f6] text-[#008f86]"
+                    aria-hidden="true"
+                  ></span>
+                </summary>
+                <p class="!text-[16px] mt-3 leading-relaxed text-slate-600">
+                  Call reception on
+                  <a class="font-bold text-[#008f86]" href="tel:02088592223"
+                    >020 8859 2223</a
+                  >
+                  to ask about availability and arrange an appointment.
+                </p>
+              </details>
+
+              <details
+                class="group rounded-2xl border border-[#d8eeee] bg-white p-4 shadow-sm sm:p-5"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0e2942] marker:hidden"
+                >
+                  Where is the clinic?
+                  <span
+                    class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6f7f6] text-[#008f86]"
+                    aria-hidden="true"
+                  ></span>
+                </summary>
+                <p class="!text-[16px] mt-3 leading-relaxed text-slate-600">
+                  We are at 10 Westmount Road, Eltham, London SE9 1JD. Use the
+                  Google map to view the location and get directions.
+                </p>
+              </details>
+
+              <details
+                class="group rounded-2xl border border-[#d8eeee] bg-white p-4 shadow-sm sm:p-5"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0e2942] marker:hidden"
+                >
+                  What are the opening hours?
+                  <span
+                    class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6f7f6] text-[#008f86]"
+                    aria-hidden="true"
+                  ></span>
+                </summary>
+                <p class="!text-[16px] mt-3 leading-relaxed text-slate-600">
+                  Hours vary by service. See the
+                  <a class="font-bold text-[#008f86]" href="contact.html"
+                    >contact page</a
+                  >
+                  for current service hours or call reception to confirm.
+                </p>
+              </details>
+
+              <details
+                class="group rounded-2xl border border-[#d8eeee] bg-white p-4 shadow-sm sm:p-5"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0e2942] marker:hidden"
+                >
+                  Which areas do you serve?
+                  <span
+                    class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e6f7f6] text-[#008f86]"
+                    aria-hidden="true"
+                  ></span>
+                </summary>
+                <p class="!text-[16px] mt-3 leading-relaxed text-slate-600">
+                  We welcome patients from Eltham and nearby South East London
+                  communities. Contact reception if you would like to check
+                  whether we cover your area.
+                </p>
+              </details>
+            </div>
+          </section>
+        </div>
+
+        <!-- Main content -->
+        <div
+          class="hidden"
+        >
+          <!-- MAP -->
+          <div class="group relative">
+            <div
+              class="absolute -inset-1 rounded-[2rem] bg-gradient-to-br from-[#00a89d]/20 via-[#a8e4e8]/30 to-transparent opacity-70 blur-sm"
+            ></div>
+
+            <div
+              class="relative overflow-hidden rounded-[1.6rem] border border-[#d8eeee] bg-white p-2 shadow-[0_20px_60px_rgba(14,41,66,0.10)]"
+            >
+              <!-- Map top label -->
+              <div
+                class="absolute left-5 top-5 z-[500] flex items-center gap-2 rounded-xl border border-white/80 bg-white/95 px-3.5 py-2.5 shadow-lg backdrop-blur"
+              >
+                <span
+                  class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#00a89d]/10 text-[#00a89d]"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+
+                <div>
+                  <p class="text-[14px] font-extrabold text-[#0e2942]">
+                    Eltham Chiropractic & Podiatry
+                  </p>
+                  <p class="text-[16px] text-slate-500">
+                    10 Westmount Road, SE9
+                  </p>
+                </div>
+              </div>
+
+              <!-- Real interactive map -->
+              <div
+                id="service-area-map"
+                class="overflow-hidden rounded-[1.2rem]"
+                role="img"
+                aria-label="Interactive map showing Eltham Chiropractic and Podiatry and nearby areas served"
+              ></div>
+
+              <!-- Map bottom legend -->
+              <div
+                class="absolute bottom-5 left-5 z-[500] flex flex-wrap items-center gap-4 rounded-xl border border-white/80 bg-white/95 px-4 py-3 shadow-lg backdrop-blur"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="h-3 w-3 rounded-full border-[3px] border-[#00a89d] bg-white"
+                  ></span>
+                  <span class="text-[16px] font-bold text-[#0e2942]">
+                    Our Clinic
+                  </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <span class="h-2.5 w-2.5 rounded-full bg-[#00c9bd]"></span>
+                  <span class="text-[16px] font-semibold text-slate-500">
+                    Areas We Serve
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="flex flex-col justify-between gap-6">
+            <!-- Primary area -->
+            <div>
+              <div class="mb-3 flex items-center justify-between">
+                <h4
+                  class="text-[14px] font-extrabold uppercase tracking-[0.17em] text-[#00a89d]"
+                >
+                  Our Home Location
+                </h4>
+                <span class="text-[16px] font-bold text-slate-400"> SE9 </span>
+              </div>
+
+              <div
+                class="relative overflow-hidden rounded-2xl border border-[#00a89d]/30 bg-gradient-to-r from-[#e9fafa] to-white p-5"
+              >
+                <div
+                  class="absolute -right-5 -top-7 h-28 w-28 rounded-full bg-[#00a89d]/[0.07]"
+                ></div>
+
+                <div class="relative flex items-center gap-4">
+                  <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#00a89d] text-[18px] text-white shadow-lg shadow-[#00a89d]/20"
+                  >
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <div>
+                    <p class="text-[20px] font-extrabold text-[#0e2942]">
+                      Eltham, London
+                    </p>
+                    <p class="mt-1 text-[16px] text-slate-500">
+                      Our clinic and main service area
+                    </p>
+                  </div>
+
+                  <span
+                    class="ml-auto rounded-full bg-[#00a89d]/10 px-3 py-1 text-[16px] font-extrabold text-[#008e85]"
+                  >
+                    SE9
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Areas served -->
+            <div>
+              <div
+                class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <h4
+                  class="text-[18px] font-extrabold uppercase tracking-[0.17em] text-slate-400"
+                >
+                  Also Serving
+                </h4>
+
+                <span class="text-base font-semibold text-slate-400">
+                  Nearby communities
+                </span>
+              </div>
+
+              <div class="flex flex-wrap gap-3 text-[#0e2942]">
+                <span class="area-pill">Blackheath</span>
+                <span class="area-pill">Greenwich</span>
+                <span class="area-pill">Lee</span>
+                <span class="area-pill">Lewisham</span>
+                <span class="area-pill">Kidbrooke</span>
+                <span class="area-pill">Mottingham</span>
+                <span class="area-pill">New Eltham</span>
+                <span class="area-pill">Sidcup</span>
+                <span class="area-pill">Welling</span>
+                <span class="area-pill">Bexleyheath</span>
+                <span class="area-pill">Chislehurst</span>
+                <span class="area-pill">Woolwich</span>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div
+              class="relative overflow-hidden rounded-2xl bg-[#0e2942] p-6 shadow-[0_12px_30px_rgba(14,41,66,0.15)]"
+            >
+              <div
+                class="absolute -right-8 -top-10 h-36 w-36 rounded-full border-[20px] border-white/[0.04]"
+              ></div>
+
+              <div
+                class="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div>
+                  <h4 class="text-[20px] font-extrabold text-white">
+                    Don't see your area listed?
+                  </h4>
+
+                  <p class="mt-1 text-[16px] leading-6 text-white/65">
+                    Get in touch with our friendly reception team.
+                  </p>
+                </div>
+
+                <a
+                  href="contact.html"
+                  class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#00a89d] px-5 py-3 text-[16px] font-extrabold text-white transition hover:bg-[#00958c] hover:shadow-lg"
+                >
+                  Contact Us
+                  <i class="fa-solid fa-arrow-right text-[16px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom trust strip -->
+        <div
+          class="hidden"
+        >
+          <div
+            class="flex items-center gap-2 text-[16px] font-semibold text-slate-500"
+          >
+            <i class="fa-solid fa-location-dot text-[#00a89d]"></i>
+            Convenient Eltham Location
+          </div>
+
+          <span
+            class="hidden h-1 w-1 rounded-full bg-[#b5dada] sm:block"
+          ></span>
+
+          <div
+            class="flex items-center gap-2 text-[16px] font-semibold text-slate-500"
+          >
+            <i class="fa-solid fa-users text-[#00a89d]"></i>
+            Welcoming Patients From Nearby Areas
+          </div>
+
+          <span
+            class="hidden h-1 w-1 rounded-full bg-[#b5dada] sm:block"
+          ></span>
+
+          <div
+            class="flex items-center gap-2 text-[16px] font-semibold text-slate-500"
+          >
+            <i class="fa-solid fa-heart-pulse text-[#00a89d]"></i>
+            Supporting Your Health & Wellbeing
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .faq-icon::before {
+        content: "+";
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+
+      details[open] .faq-icon::before {
+        content: "−";
+      }
+    </style>
+
+    <section class="bg-[#f3fafb] py-14 sm:py-18">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:px-6 md:flex-row md:items-center lg:px-8"
+      >
+        <div>
+          <span
+            class="text-[16px] font-extrabold uppercase tracking-[0.18em] text-[#008f86]"
+            >Here to help</span
+          >
+          <h2 class="mt-3 text-2xl font-black text-[#0e2942] sm:text-3xl">
+            Questions about our services?
+          </h2>
+          <p class="!text-[16px] mt-2 max-w-2xl leading-relaxed text-slate-600">
+            Contact reception for general enquiries about chiropractic,
+            osteopathy, podiatry and nutrition appointments.
+          </p>
+        </div>
+        <a
+          href="contact.html"
+          class="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#0e2942] px-6 py-3 font-bold text-white transition hover:bg-[#143a5c]"
+          >Contact reception
+          <i class="fa-solid fa-arrow-right text-[16px]" aria-hidden="true"></i
+        ></a>
+      </div>
+    </section>
+    <footer
+      class="relative w-full overflow-hidden border-t border-[#00a89d]/30 bg-[#071827] pt-12 font-sans text-[16px] text-slate-300 sm:pt-14"
+    >
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute right-0 -top-32 h-96 w-96 rounded-full bg-[#00a89d]/[0.07] blur-3xl"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -bottom-40 left-[8%] h-80 w-80 rounded-full bg-sky-400/[0.04] blur-3xl"
+      ></div>
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="border-b border-white/10 py-8 sm:py-9">
+          <a
+            href="index.html"
+            class="group inline-flex max-w-xl items-center gap-3 rounded-2xl transition hover:opacity-90"
+            aria-label="Eltham Chiropractic and Podiatry home"
+          >
+            <span
+              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-[#00a89d]/40 bg-white p-2 shadow-lg shadow-black/10 transition group-hover:-translate-y-0.5"
+            >
+              <img
+                src="assets/ecp-logo.svg"
+                alt=""
+                class="h-full w-full object-contain"
+              />
+            </span>
+            <span>
+              <span
+                class="block text-[18px] font-black leading-tight tracking-tight text-white sm:text-xl"
+                >Eltham Chiropractic &amp; Podiatry</span
+              >
+              <span
+                class="mt-1 block text-[16px] font-bold uppercase tracking-[0.16em] text-[#35cfc3] sm:text-[14px]"
+                >Local care in Eltham, London SE9</span
+              >
+            </span>
+          </a>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-9 border-b border-white/10 py-9 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-10 lg:grid-cols-12 lg:gap-x-7 lg:gap-y-0 lg:py-10"
+        >
+          <div class="sm:col-span-1 lg:col-span-3">
+            <h4
+              class="mb-4 flex items-center gap-2 text-[16px] font-extrabold uppercase tracking-[0.12em] text-white"
+            >
+              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Clinical
+              Treatments
+            </h4>
+            <ul class="space-y-3 text-[20px] text-slate-300">
+              <li>
+                <a
+                  href="treatments.html#chiropractic"
+                  class="group flex items-center gap-2 transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Chiropractic</a
+                >
+              </li>
+              <li>
+                <a
+                  href="treatments.html#podiatry"
+                  class="group flex items-center gap-2 transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Podiatry &amp; Foot Care</a
+                >
+              </li>
+              <li>
+                <a
+                  href="treatments.html#osteopathy"
+                  class="group flex items-center gap-2 transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Osteopathy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="treatments.html#nutrition"
+                  class="group flex items-center gap-2 transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Nutrition</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="sm:col-span-1 lg:col-span-2">
+            <h4
+              class="mb-4 flex items-center gap-2 text-[16px] font-extrabold uppercase tracking-[0.12em] text-white"
+            >
+              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Explore
+            </h4>
+            <ul class="space-y-3 text-[20px] text-slate-300">
+              <li>
+                <a
+                  href="index.html"
+                  class="group flex items-center gap-2 font-medium transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="group flex items-center gap-2 font-medium transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >About Our Clinic</a
+                >
+              </li>
+              <li>
+                <a
+                  href="treatments.html"
+                  class="group flex items-center gap-2 font-medium transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="group flex items-center gap-2 font-medium transition-colors hover:text-[#65ddd3]"
+                  ><i
+                    class="fa-solid fa-chevron-right text-[18px] text-[#35cfc3]"
+                    aria-hidden="true"
+                  ></i
+                  >Contact &amp; Visit</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="sm:col-span-1 lg:col-span-3">
+            <h4
+              class="mb-4 flex items-center gap-2 text-[16px] font-extrabold uppercase tracking-[0.12em] text-white"
+            >
+              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Service
+              Opening Times
+            </h4>
+            <div class="space-y-3 text-[16px] text-slate-300">
+              <p class="!text-[16px] leading-relaxed">
+                <strong class="text-white">Podiatry:</strong> Mon, Tue &amp; Fri
+                7am–5pm; Wed 7am–8:30pm; Thu 7am–6:30pm; Sat 8am–3pm; Sun
+                closed.
+              </p>
+              <p class="!text-[16px] leading-relaxed">
+                <strong class="text-white"
+                  >Chiropractic &amp; osteopathy:</strong
+                >
+                Mon &amp; Tue 7am–4pm; Wed 7am–7pm; Thu 7am–12 noon; Fri
+                7am–7pm; Sat &amp; Sun closed.
+              </p>
+              <p class="!text-[16px] leading-relaxed">
+                Ask reception about nutrition appointments.
+              </p>
+            </div>
+          </div>
+          <div id="footer-contact" class="sm:col-span-1 lg:col-span-4">
+            <h4
+              class="mb-4 flex items-center gap-2 text-[16px] font-extrabold uppercase tracking-[0.12em] text-white"
+            >
+              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Contact
+              Reception
+            </h4>
+            <address class="space-y-3 text-[20px] not-italic text-slate-300">
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-start gap-2.5 leading-relaxed transition-colors hover:text-white"
+                ><i
+                  class="fa-solid fa-location-dot mt-0.5 text-[#35cfc3]"
+                  aria-hidden="true"
+                ></i
+                ><span
+                  >10 Westmount Road, Eltham,<br /><span
+                    class="font-medium text-white"
+                    >London SE9 1JD</span
+                  ></span
+                ></a
+              >
+              <a
+                href="tel:02088592223"
+                class="flex items-center gap-2.5 font-bold text-white transition-colors hover:text-[#65ddd3]"
+                ><i
+                  class="fa-solid fa-phone text-[14px] text-[#35cfc3]"
+                  aria-hidden="true"
+                ></i
+                >020 8859 2223</a
+              >
+              <div
+                class="flex items-start gap-2.5 text-[16px] font-medium text-[#65ddd3]"
+              >
+                <i
+                  class="fa-solid fa-square-parking mt-0.5 text-[16px]"
+                  aria-hidden="true"
+                ></i
+                ><span
+                  >Half-hour free parking on Westmount Road (ticket
+                  required)</span
+                >
+              </div>
+            </address>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-3 py-6 text-center text-[16px] text-slate-400 md:flex-row md:items-center md:justify-between md:text-left"
+        >
+          <p class="!text-[16px]">
+            &copy; 2026 Eltham Chiropractic &amp; Podiatry Clinic. All rights
+            reserved.
+          </p>
+          <nav aria-label="Legal information" class="flex flex-wrap justify-center gap-x-5 gap-y-2 md:justify-end">
+            <a href="terms-and-conditions.html" class="transition-colors hover:text-white">Terms &amp; Conditions</a>
+            <a href="privacy-policy.html" class="transition-colors hover:text-white">Privacy Policy</a>
+            <a href="cookie-policy.html" class="transition-colors hover:text-white">Cookie Policy</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Floating Back to Top Button -->
+    <a
+      href="#healthcare-hero"
+      class="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-[#00a89d] hover:bg-[#00857c] text-white shadow-xl shadow-teal-950/30 flex items-center justify-center hover:scale-110 transition-all z-40 cursor-pointer"
+      aria-label="Back to Top"
+    >
+      <svg
+        class="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </a>
+
+    <!-- ==================== APPOINTMENT ENQUIRY MODAL ==================== -->
+    <div
+      id="bookingModal"
+      class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl animate-fade-in"
+      >
+        <button
+          onclick="closeBookingModal()"
+          class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold cursor-pointer"
+        >
+          &times;
+        </button>
+
+        <span
+          class="text-[16px] font-bold text-[#00a89d] tracking-wider uppercase"
+          >Appointment enquiries</span
+        >
+        <h3 class="text-2xl font-black text-[#0e2942] mt-1">
+          Speak with reception
+        </h3>
+        <p class="mt-3 text-[16px] leading-relaxed text-slate-600">
+          Call to ask about availability and arrange an appointment with the
+          right practitioner. Reception can also confirm service-specific hours.
+        </p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="tel:02088592223"
+            class="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#00a89d] px-5 py-3 font-bold text-white transition hover:bg-[#00857c]"
+            ><i class="fa-solid fa-phone" aria-hidden="true"></i>020 8859
+            2223</a
+          >
+          <a
+            href="contact.html"
+            class="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-slate-200 px-5 py-3 font-bold text-[#0e2942] transition hover:border-teal-300 hover:text-[#008f86]"
+            >Contact details</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function openBookingModal() {
+        document.getElementById("bookingModal").classList.remove("hidden");
+      }
+
+      function closeBookingModal() {
+        document.getElementById("bookingModal").classList.add("hidden");
+      }
+
+      function handleFormSubmit(e) {
+        e.preventDefault();
+        document.getElementById("formSuccess").classList.remove("hidden");
+        e.target.reset();
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeBookingModal();
+      });
+
+      function toggleMobileNav() {
+        const nav = document.getElementById("mobileNav");
+        nav.classList.toggle("hidden");
+      }
+
+      function toggleMobileTreatments() {
+        const menu = document.getElementById("mobileTreatmentsSubmenu");
+        const icon = document.getElementById("mobileTreatmentsIcon");
+        menu.classList.toggle("hidden");
+        icon.textContent = menu.classList.contains("hidden") ? "▾" : "▴";
+      }
+
+      function initializeTextReveals() {
+        const textElements = document.querySelectorAll(
+          "section h1, section h2, section h3, section h4, section h5, section h6, section p, section li, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer li",
+        );
+
+        if (!textElements.length || !("IntersectionObserver" in window)) {
+          return;
+        }
+
+        textElements.forEach((element) => {
+          const siblings = Array.from(element.parentElement.children).filter(
+            (sibling) => sibling.matches("h1, h2, h3, h4, h5, h6, p, li"),
+          );
+          const siblingIndex = siblings.indexOf(element);
+          element.dataset.textReveal = "";
+          element.style.setProperty(
+            "--text-reveal-delay",
+            `${Math.min(siblingIndex, 4) * 75}ms`,
+          );
+        });
+
+        document.documentElement.classList.add("text-reveal-ready");
+
+        const observer = new IntersectionObserver(
+          (entries, currentObserver) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-text-revealed");
+                currentObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -36px 0px" },
+        );
+
+        textElements.forEach((element) => observer.observe(element));
+      }
+
+      initializeTextReveals();
+    </script>
+
+  </body>
+</html>
