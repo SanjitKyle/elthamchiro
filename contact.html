@@ -174,9 +174,11 @@
         line-height: 1.5 !important;
       }
       #site-footer > div > div:last-child p { flex: 1 1 50%; text-align: left; font-weight: 600; }
+      #site-footer > div > div:last-child p:last-child { text-align: right; }
       @media (max-width: 639px) {
         #site-topbar nav a { gap: 0.35rem !important; padding-left: 0.55rem !important; padding-right: 0.55rem !important; }
         #site-footer > div > div:last-child p { text-align: center; }
+        #site-footer > div > div:last-child p:last-child { text-align: center; }
       }
     
       #site-footer > div > div:last-child > p { opacity: 1 !important; visibility: visible !important; filter: none !important; transform: none !important; }
@@ -197,7 +199,7 @@
       <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2">
         <div class="flex flex-wrap items-center gap-x-5 gap-y-1 text-slate-300">
           <a href="https://www.google.com/maps/search/?api=1&amp;query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 transition hover:text-white sm:inline-flex"><i class="fa-solid fa-location-dot text-[#00a89d]" aria-hidden="true"></i>10 Westmount Road, Eltham, London SE9 1JD</a>
-          <a href="tel:02088592223" class="hidden items-center gap-2 transition hover:text-white sm:inline-flex"><i class="fa-solid fa-phone text-[#00a89d]" aria-hidden="true"></i>020 8859 2223</a>
+          <a href="tel:+442088592223" class="hidden items-center gap-2 transition hover:text-white sm:inline-flex"><i class="fa-solid fa-phone text-[#00a89d]" aria-hidden="true"></i>020 8859 2223</a>
           <span class="hidden items-center gap-2 transition hover:text-white xl:inline-flex"><i class="fa-regular fa-clock text-[#00a89d]" aria-hidden="true"></i>Service hours vary &mdash; see below</span>
         </div>
         <nav aria-label="Review links" class="ml-auto flex items-center gap-2">
@@ -230,7 +232,7 @@
           <a href="contact.html" aria-current="page" class="whitespace-nowrap rounded-full bg-[#0e2942] px-4 py-2 font-bold text-white">Contact</a>
           <a href="pricing.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Pricing</a>
         </nav>
-        <a href="tel:02088592223" aria-label="Call us now at 020 8859 2223" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#00a89d] px-3 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#00857c] sm:px-4 sm:text-sm"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sm:hidden">Call</span><span class="hidden sm:inline">Call Us Now</span></a>
+        <a href="tel:+442088592223" aria-label="Call us now at 020 8859 2223" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#00a89d] px-3 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#00857c] sm:px-4 sm:text-sm"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sm:hidden">Call</span><span class="hidden sm:inline">Call Us Now</span></a>
         <button type="button" onclick="toggleMobileNav()" class="shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden" aria-label="Toggle navigation" aria-expanded="false" id="mobileNavToggle"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i></button>
       </div>
       <nav id="mobileNav" aria-label="Mobile navigation" class="hidden border-t border-slate-100 bg-white px-4 py-3 lg:hidden">
@@ -240,7 +242,7 @@
           <a href="treatments.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">Treatments</a>
           <a href="contact.html" aria-current="page" class="rounded-lg bg-teal-50 px-3 py-2 font-bold text-[#008f86]">Contact</a>
           <a href="pricing.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">Pricing</a>
-          <a href="tel:02088592223" class="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#00a89d] px-4 py-2 font-bold text-white transition hover:bg-[#00857c]"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call Us Now: 020 8859 2223</a>
+          <a href="tel:+442088592223" class="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#00a89d] px-4 py-2 font-bold text-white transition hover:bg-[#00857c]"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call Us Now: 020 8859 2223</a>
         </div>
       </nav>
     </header>
@@ -288,7 +290,7 @@
 
             <div class="mt-8 flex flex-wrap gap-3">
               <a
-                href="tel:02088592223"
+                href="tel:+442088592223"
                 class="inline-flex items-center gap-2 rounded-full bg-[#00a89d] px-6 py-3.5 font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#00857c]"
               >
                 <i class="fa-solid fa-phone text-sm"></i>
@@ -397,6 +399,95 @@
         </div>
       </section>
 
+      
+      <section class="bg-white py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid items-center gap-10 lg:grid-cols-[.8fr_1.2fr]">
+            <div>
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-teal-50 px-4 py-2 text-xs font-extrabold uppercase tracking-wider text-[#008f86]"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+
+                Visit us
+              </span>
+
+              <h2
+                class="mt-5 text-3xl font-black leading-tight text-[#0e2942] sm:text-4xl"
+              >
+                Find us in the heart of Eltham
+              </h2>
+
+              <p class="mt-4 text-slate-600">
+                We welcome patients at our clinic on Westmount Road. Use the map
+                to plan your journey.
+              </p>
+
+              <div class="mt-7 space-y-4">
+                <div class="flex items-start gap-3">
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-[#00a89d]"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+
+                  <div>
+                    <h3 class="font-bold text-[#0e2942]">Clinic address</h3>
+
+                    <p class="mt-1 text-slate-500">
+                      10 Westmount Road,<br />
+                      Eltham, London SE9 1JD
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-[#00a89d]"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+
+                  <div>
+                    <h3 class="font-bold text-[#0e2942]">Call reception</h3>
+
+                    <a
+                      href="tel:+442088592223"
+                      class="mt-1 inline-block text-slate-500 hover:text-[#008f86]"
+                    >
+                      020 8859 2223
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0e2942] px-6 py-3.5 font-bold text-white transition hover:bg-[#143a5c]"
+              >
+                <i class="fa-solid fa-diamond-turn-right"></i>
+
+                Get directions
+              </a>
+            </div>
+
+            <div
+              class="overflow-hidden rounded-3xl border border-slate-200 shadow-xl"
+            >
+              <iframe
+                title="Map showing Eltham Chiropractic and Podiatry Clinic"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40736324.91729824!2d-73.7655549!3d51.45176760000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ac038b032589%3A0xc2626f304f758362!2sEltham%20Chiropractic%20%26%20Podiatry%20Clinic!5e0!3m2!1sen!2sin!4v1793699142969!5m2!1sen!2sin"
+                class="h-[360px] w-full border-0 sm:h-[430px]"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- ================= OPENING HOURS + CONTACT FORM ================= -->
 
       <section
@@ -733,7 +824,7 @@
               </p>
 
               <a
-                href="tel:02088592223"
+                href="tel:+442088592223"
                 class="mt-5 inline-flex items-center gap-2 font-bold text-[#008f86] hover:text-[#0e2942]"
               >
                 Contact reception
@@ -781,94 +872,6 @@
 
       <!-- ================= MAP SECTION ================= -->
 
-      <section class="bg-white py-16 sm:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid items-center gap-10 lg:grid-cols-[.8fr_1.2fr]">
-            <div>
-              <span
-                class="inline-flex items-center gap-2 rounded-full bg-teal-50 px-4 py-2 text-xs font-extrabold uppercase tracking-wider text-[#008f86]"
-              >
-                <i class="fa-solid fa-location-dot"></i>
-
-                Visit us
-              </span>
-
-              <h2
-                class="mt-5 text-3xl font-black leading-tight text-[#0e2942] sm:text-4xl"
-              >
-                Find us in the heart of Eltham
-              </h2>
-
-              <p class="mt-4 text-slate-600">
-                We welcome patients at our clinic on Westmount Road. Use the map
-                to plan your journey.
-              </p>
-
-              <div class="mt-7 space-y-4">
-                <div class="flex items-start gap-3">
-                  <span
-                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-[#00a89d]"
-                  >
-                    <i class="fa-solid fa-location-dot"></i>
-                  </span>
-
-                  <div>
-                    <h3 class="font-bold text-[#0e2942]">Clinic address</h3>
-
-                    <p class="mt-1 text-slate-500">
-                      10 Westmount Road,<br />
-                      Eltham, London SE9 1JD
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-3">
-                  <span
-                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-[#00a89d]"
-                  >
-                    <i class="fa-solid fa-phone"></i>
-                  </span>
-
-                  <div>
-                    <h3 class="font-bold text-[#0e2942]">Call reception</h3>
-
-                    <a
-                      href="tel:02088592223"
-                      class="mt-1 inline-block text-slate-500 hover:text-[#008f86]"
-                    >
-                      020 8859 2223
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0e2942] px-6 py-3.5 font-bold text-white transition hover:bg-[#143a5c]"
-              >
-                <i class="fa-solid fa-diamond-turn-right"></i>
-
-                Get directions
-              </a>
-            </div>
-
-            <div
-              class="overflow-hidden rounded-3xl border border-slate-200 shadow-xl"
-            >
-              <iframe
-                title="Map showing Eltham Chiropractic and Podiatry Clinic"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40736324.91729824!2d-73.7655549!3d51.45176760000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ac038b032589%3A0xc2626f304f758362!2sEltham%20Chiropractic%20%26%20Podiatry%20Clinic!5e0!3m2!1sen!2sin!4v1793699142969!5m2!1sen!2sin"
-                class="h-[360px] w-full border-0 sm:h-[430px]"
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!-- ================= FOOTER ================= -->
@@ -899,6 +902,9 @@
               <a class="block transition hover:text-[#65ddd3]" href="treatments.html">&rsaquo; &nbsp;Services</a>
               <a class="block transition hover:text-[#65ddd3]" href="contact.html">&rsaquo; &nbsp;Contact &amp; Visit</a>
               <a class="block transition hover:text-[#65ddd3]" href="pricing.html">&rsaquo; &nbsp;Pricing</a>
+              <a class="block transition hover:text-[#65ddd3]" href="terms-and-conditions.html">&rsaquo; &nbsp;Terms &amp; Conditions</a>
+              <a class="block transition hover:text-[#65ddd3]" href="privacy-policy.html">&rsaquo; &nbsp;Privacy Policy</a>
+              <a class="block transition hover:text-[#65ddd3]" href="cookie-policy.html">&rsaquo; &nbsp;Cookie Policy</a>
             </nav>
           </section>
           <section>
@@ -913,7 +919,7 @@
             <h2 class="mb-4 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-white"><span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Contact Reception</h2>
             <address class="space-y-3 text-sm not-italic leading-relaxed">
               <a class="flex items-start gap-2 text-white transition hover:text-[#65ddd3]" href="https://www.google.com/maps/search/?api=1&amp;query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot mt-1 text-[#35cfc3]" aria-hidden="true"></i><span>10 Westmount Road, Eltham,<br />London SE9 1JD</span></a>
-              <a class="inline-flex items-center gap-2 font-bold text-white transition hover:text-[#65ddd3]" href="tel:02088592223"><i class="fa-solid fa-phone text-[#35cfc3]" aria-hidden="true"></i>020 8859 2223</a>
+              <a class="inline-flex items-center gap-2 font-bold text-white transition hover:text-[#65ddd3]" href="tel:+442088592223"><i class="fa-solid fa-phone text-[#35cfc3]" aria-hidden="true"></i>020 8859 2223</a>
               <p class="flex items-start gap-2 text-[#65ddd3]"><i class="fa-solid fa-square-parking mt-1" aria-hidden="true"></i><span>Half-hour free parking on Westmount Road (ticket required)</span></p>
             </address>
             <div class="footer-review-buttons mt-5 flex flex-wrap gap-2">
@@ -923,12 +929,8 @@
           </section>
         </div>
         <div class="flex flex-col gap-3 py-5 text-center text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between sm:text-left">
-          <p>&copy; 2026 Eltham Chiropractic &amp; Podiatry Clinic. All rights reserved.</p>
-          <nav aria-label="Legal information" class="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:justify-end">
-            <a class="transition hover:text-white" href="terms-and-conditions.html">Terms &amp; Conditions</a>
-            <a class="transition hover:text-white" href="privacy-policy.html">Privacy Policy</a>
-            <a class="transition hover:text-white" href="cookie-policy.html">Cookie Policy</a>
-          </nav>
+          <p>&copy; 2026 Eltham Chiropractic &amp; Podiatry Clinic. All Rights Reserved.</p>
+          <p>Designed And Developed By <a class="font-bold text-[#65ddd3] transition hover:text-white" href="https://kyleinfotech.co.in/" target="_blank" rel="noopener noreferrer">Kyleinfotech</a></p>
         </div>
       </div>
     </footer>
@@ -975,7 +977,7 @@
         if (bookingModal) {
           bookingModal.classList.remove("hidden");
         } else {
-          window.location.href = "tel:02088592223";
+          window.location.href = "tel:+442088592223";
         }
       }
 
