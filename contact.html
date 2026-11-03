@@ -115,6 +115,15 @@
         min-width: 0;
       }
 
+      .header-inner > a:first-child {
+        min-width: 0;
+        flex-shrink: 1;
+      }
+
+      .header-inner > a:first-child .flex-col {
+        min-width: 0;
+      }
+
       .main-desktop-nav {
         min-width: 0;
         flex-wrap: nowrap;
@@ -146,328 +155,79 @@
         }
       }
     </style>
+  <style>
+      #site-topbar, #site-topbar > div, #site-topbar > div > div, #site-topbar > div > div > a, #site-topbar > div > div > span { font-size: 16px !important; line-height: 1.4 !important; }
+      #site-topbar nav a { font-size: 16px !important; line-height: 1.25 !important; }
+      #site-header { font-family: "Sen", system-ui, sans-serif; }
+      #site-header > div > nav a { font-size: 16px !important; }
+      #site-header > div > a[aria-label^="Call us now"] { font-size: 16px !important; }
+      #site-footer { font-family: "Sen", system-ui, sans-serif; font-size: 16px !important; }
+      #site-footer h2 { font-size: 16px !important; line-height: 1.4 !important; }
+      #site-footer section nav, #site-footer section nav a,
+      #site-footer address, #site-footer address a, #site-footer address p,
+      #site-footer section > div { font-size: 16px !important; line-height: 1.55 !important; }
+      #site-footer .footer-review-buttons a { font-size: 16px !important; line-height: 1.25 !important; }
+      #site-footer > div > div:last-child,
+      #site-footer > div > div:last-child p,
+      #site-footer > div > div:last-child nav a {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+      #site-footer > div > div:last-child p { flex: 1 1 50%; text-align: left; font-weight: 600; }
+      @media (max-width: 639px) {
+        #site-topbar nav a { gap: 0.35rem !important; padding-left: 0.55rem !important; padding-right: 0.55rem !important; }
+        #site-footer > div > div:last-child p { text-align: center; }
+      }
+    
+      #site-footer > div > div:last-child > p { opacity: 1 !important; visibility: visible !important; filter: none !important; transform: none !important; }
+    </style>
   </head>
 
   <body class="min-h-screen bg-white text-slate-700 antialiased">
     <!-- ================= TOP UTILITY BAR ================= -->
 
-    <div
-      class="w-full bg-[#0a2236] text-white text-[14px] sm:text-[16px] py-2 px-4 sm:px-6 lg:px-8 border-b border-slate-700/40"
-    >
-      <div
-        class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3"
-      >
-        <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-300">
-          <div
-            class="flex items-center gap-1.5 hover:text-white transition-colors"
-          >
-            <i class="fa-solid fa-location-dot text-[#00a89d]"></i>
-            <span>10 Westmount Road, Eltham, London SE9 1JD</span>
-          </div>
-
-          <a
-            href="tel:02088592223"
-            class="flex items-center gap-1.5 hover:text-white transition-colors"
-          >
-            <i class="fa-solid fa-phone text-[#00a89d]"></i>
-            <span>020 8859 2223</span>
-          </a>
-
-          <div class="hidden md:flex items-center gap-1.5">
-            <i class="fa-regular fa-clock text-[#00a89d]"></i>
-            <span>Service hours vary — see below</span>
-          </div>
+    <div id="site-topbar" class="border-b border-slate-700/40 bg-[#0a2236] px-4 py-2 text-xs text-white sm:px-6 sm:text-sm lg:px-8">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2">
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-1 text-slate-300">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 transition hover:text-white sm:inline-flex"><i class="fa-solid fa-location-dot text-[#00a89d]" aria-hidden="true"></i>10 Westmount Road, Eltham, London SE9 1JD</a>
+          <a href="tel:02088592223" class="hidden items-center gap-2 transition hover:text-white sm:inline-flex"><i class="fa-solid fa-phone text-[#00a89d]" aria-hidden="true"></i>020 8859 2223</a>
+          <span class="hidden items-center gap-2 transition hover:text-white xl:inline-flex"><i class="fa-regular fa-clock text-[#00a89d]" aria-hidden="true"></i>Service hours vary &mdash; see below</span>
         </div>
+        <nav aria-label="Review links" class="ml-auto flex items-center gap-2">
+          <a href="#" class="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 topbar-action text-[11px] font-bold text-white transition hover:bg-white/20 sm:gap-2 sm:px-3 sm:text-xs"><i class="fa-solid fa-pen-to-square text-[#35cfc3]" aria-hidden="true"></i>Leave A Review</a>
+          <a href="#" class="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 topbar-action text-[11px] font-bold text-white transition hover:bg-white/20 sm:gap-2 sm:px-3 sm:text-xs"><i class="fa-solid fa-star text-[#35cfc3]" aria-hidden="true"></i>See Reviews</a>
+        </nav>
       </div>
     </div>
-
-    <!-- ================= MAIN NAVIGATION ================= -->
-
-    <header
-      class="w-full bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm"
-    >
-      <div
-        class="header-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4"
-      >
-        <!-- Logo -->
-
-        <a href="index.html" class="flex items-center gap-3 group">
-          <div
-            class="w-10 h-10 rounded-full border-2 border-[#00a89d] p-1 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform bg-teal-50/40"
-          >
-            <svg
-              class="w-6 h-6 text-[#00a89d]"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.2"
-              stroke-linecap="round"
-            >
-              <circle cx="12" cy="4" r="2"></circle>
-              <path d="M12 6v14"></path>
-              <path d="M9.5 9c1.5 1 3.5 1 5 0"></path>
-              <path d="M8.5 13c2 1 5 1 7 0"></path>
-              <path d="M9.5 17c1.5 1 3.5 1 5 0"></path>
-            </svg>
-          </div>
-
-          <div class="flex flex-col">
-            <span
-              class="text-[#0e2942] font-black text-[17px] sm:text-[18px] tracking-tight leading-none"
-            >
-              Eltham Chiropractic &amp; Podiatry
-            </span>
-
-            <span
-              class="text-slate-400 font-medium italic text-[13px] sm:text-[14px] leading-tight mt-1"
-            >
-              Move Better. Feel Better. Live Better.
-            </span>
-          </div>
+    <header id="site-header" class="sticky top-0 z-50 w-full border-b border-slate-100 bg-white shadow-sm">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-5 sm:px-6 lg:px-8">
+        <a href="index.html" aria-label="Eltham Chiropractic and Podiatry home" class="flex min-w-0 items-center gap-2.5 sm:gap-3">
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#00a89d] bg-teal-50/40 p-1"><img src="assets/ecp-logo.svg" alt="" class="h-full w-full object-contain" /></span>
+          <span class="flex min-w-0 flex-col">
+            <span class="text-[12px] font-black leading-tight tracking-tight text-[#0e2942] sm:whitespace-nowrap sm:text-[17px]">Eltham Chiropractic &amp; Podiatry</span>
+            <span class="mt-0.5 hidden whitespace-nowrap text-[10px] font-medium italic leading-tight text-slate-400 sm:block sm:text-[13px]">Move Better. Feel Better. Live Better.</span>
+          </span>
         </a>
-
-        <!-- Desktop Navigation -->
-
-        <nav
-          class="main-desktop-nav hidden lg:flex flex-1 items-center justify-center gap-4 xl:gap-6 text-[15px] xl:text-[16px] font-semibold text-slate-700"
-        >
-          <a
-            href="index.html"
-            class="hover:text-[#00a89d] transition-colors py-2"
-          >
-            Home
-          </a>
-
-          <a
-            href="about.html"
-            class="hover:text-[#00a89d] transition-colors py-2"
-          >
-            About Us
-          </a>
-
-          <!-- Treatments Dropdown -->
-
-          <div class="relative group py-2">
-            <button
-              type="button"
-              class="hover:text-[#00a89d] transition-colors inline-flex items-center gap-1.5 font-medium"
-            >
-              Treatments
-
-              <i
-                class="fa-solid fa-chevron-down text-xs transition-transform group-hover:rotate-180"
-              ></i>
-            </button>
-
-            <div
-              class="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0 z-50 w-80"
-            >
-              <div
-                class="bg-white rounded-2xl shadow-xl border border-slate-100 p-2 overflow-hidden"
-              >
-                <div class="px-3 py-2 border-b border-slate-100 mb-1">
-                  <span
-                    class="text-[13px] font-bold text-slate-400 uppercase tracking-wider"
-                  >
-                    Our Specialist Care
-                  </span>
-                </div>
-
-                <a
-                  href="treatments.html#chiropractic"
-                  class="block p-3 rounded-xl hover:bg-teal-50 transition"
-                >
-                  <span class="font-bold text-slate-800"
-                    >Chiropractic Care</span
-                  >
-                  <span class="block text-sm text-slate-400"
-                    >Spinal alignment & joint pain relief</span
-                  >
-                </a>
-
-                <a
-                  href="treatments.html#podiatry"
-                  class="block p-3 rounded-xl hover:bg-teal-50 transition"
-                >
-                  <span class="font-bold text-slate-800"
-                    >Podiatry & Chiropody</span
-                  >
-                  <span class="block text-sm text-slate-400"
-                    >Nails, skin, corns & diabetic feet</span
-                  >
-                </a>
-
-                <a
-                  href="treatments.html#gait-analysis"
-                  class="block p-3 rounded-xl hover:bg-teal-50 transition"
-                >
-                  <span class="font-bold text-slate-800"
-                    >Digital Gait Analysis</span
-                  >
-                  <span class="block text-sm text-slate-400"
-                    >Dynamic foot pressure mapping</span
-                  >
-                </a>
-
-                <a
-                  href="treatments.html#orthotics"
-                  class="block p-3 rounded-xl hover:bg-teal-50 transition"
-                >
-                  <span class="font-bold text-slate-800"
-                    >Custom Foot Orthotics</span
-                  >
-                  <span class="block text-sm text-slate-400"
-                    >Precision arch & posture correction</span
-                  >
-                </a>
-
-                <a
-                  href="treatments.html#sports-injury"
-                  class="block p-3 rounded-xl hover:bg-teal-50 transition"
-                >
-                  <span class="font-bold text-slate-800"
-                    >Sports Injury & Rehab</span
-                  >
-                  <span class="block text-sm text-slate-400"
-                    >Joint mobility & muscle recovery</span
-                  >
-                </a>
-
-                <div class="p-3 border-t border-slate-100 text-center">
-                  <a
-                    href="treatments.html"
-                    class="text-sm font-bold text-[#00a89d]"
-                  >
-                    Explore All Treatments →
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a
-            href="contact.html"
-            aria-current="page"
-            class="bg-[#0e2942] text-white px-5 py-2 rounded-full font-bold"
-          >
-            Contact
-          </a>
-
-          <a href="#" class="desktop-nav-review hover:text-[#00a89d] transition-colors">
-            Leave A Review
-          </a>
-
-          <a href="#" class="desktop-nav-review hover:text-[#00a89d] transition-colors">
-            See Reviews
-          </a>
+        <nav aria-label="Main navigation" class="hidden flex-1 items-center justify-center gap-3 text-sm font-semibold text-slate-700 lg:flex xl:gap-5">
+          <a href="index.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Home</a>
+          <a href="about.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">About Us</a>
+          <a href="treatments.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Treatments</a>
+          <a href="contact.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Contact</a>
+          <a href="pricing.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Pricing</a>
         </nav>
-
-        <!-- Mobile Button -->
-
-        <div class="flex items-center shrink-0">
-          <button
-            onclick="toggleMobileNav()"
-            class="lg:hidden p-2 rounded-xl text-slate-600 hover:bg-slate-100"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-            id="mobileNavToggle"
-          >
-            <i class="fa-solid fa-bars text-xl"></i>
-          </button>
-        </div>
+        <a href="tel:02088592223" aria-label="Call us now at 020 8859 2223" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#00a89d] px-3 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#00857c] sm:px-4 sm:text-sm"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sm:hidden">Call</span><span class="hidden sm:inline">Call Us Now</span></a>
+        <button type="button" onclick="toggleMobileNav()" class="shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden" aria-label="Toggle navigation" aria-expanded="false" id="mobileNavToggle"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i></button>
       </div>
-
-      <!-- Mobile Navigation -->
-
-      <div
-        id="mobileNav"
-        class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-4 space-y-2"
-      >
-        <a
-          href="index.html"
-          class="block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
-        >
-          Home
-        </a>
-
-        <a
-          href="about.html"
-          class="block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
-        >
-          About Us
-        </a>
-
-        <div>
-          <button
-            onclick="toggleMobileTreatments()"
-            class="w-full flex items-center justify-between px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
-          >
-            Treatments
-
-            <i
-              id="mobileTreatmentsIcon"
-              class="fa-solid fa-chevron-down text-xs"
-            ></i>
-          </button>
-
-          <div
-            id="mobileTreatmentsSubmenu"
-            class="hidden pl-5 py-2 space-y-2 text-sm text-slate-600"
-          >
-            <a
-              href="treatments.html#chiropractic"
-              class="block py-1 hover:text-[#00a89d]"
-              >Chiropractic Care</a
-            >
-
-            <a
-              href="treatments.html#podiatry"
-              class="block py-1 hover:text-[#00a89d]"
-              >Podiatry & Chiropody</a
-            >
-
-            <a
-              href="treatments.html#gait-analysis"
-              class="block py-1 hover:text-[#00a89d]"
-              >Digital Gait Analysis</a
-            >
-
-            <a
-              href="treatments.html#orthotics"
-              class="block py-1 hover:text-[#00a89d]"
-              >Custom Foot Orthotics</a
-            >
-
-            <a
-              href="treatments.html#sports-injury"
-              class="block py-1 hover:text-[#00a89d]"
-              >Sports Injury & Rehab</a
-            >
-          </div>
+      <nav id="mobileNav" aria-label="Mobile navigation" class="hidden border-t border-slate-100 bg-white px-4 py-3 lg:hidden">
+        <div class="mx-auto grid max-w-7xl gap-1">
+          <a href="index.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">Home</a>
+          <a href="about.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">About Us</a>
+          <a href="treatments.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">Treatments</a>
+          <a href="contact.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">Contact</a>
+          <a href="pricing.html" class="rounded-lg px-3 py-2 font-semibold text-slate-700 transition hover:bg-slate-50">Pricing</a>
+          <a href="tel:02088592223" class="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#00a89d] px-4 py-2 font-bold text-white transition hover:bg-[#00857c]"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call Us Now: 020 8859 2223</a>
         </div>
-
-        <a
-          href="contact.html"
-          aria-current="page"
-          class="block px-3 py-2 rounded-lg font-bold text-white bg-[#0e2942]"
-        >
-          Contact
-        </a>
-
-        <a
-          href="#"
-          class="block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
-        >
-          Leave A Review
-        </a>
-
-        <a
-          href="#"
-          class="block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-50"
-        >
-          See Reviews
-        </a>
-      </div>
+      </nav>
     </header>
 
     <!-- ================= MAIN CONTENT ================= -->
@@ -1100,267 +860,56 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer
-      class="relative w-full overflow-hidden border-t border-[#00a89d]/30 bg-[#071827] pt-12 font-sans text-xs text-slate-300 sm:pt-14"
-    >
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute right-0 -top-32 h-96 w-96 rounded-full bg-[#00a89d]/[0.07] blur-3xl"
-      ></div>
-
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -bottom-40 left-[8%] h-80 w-80 rounded-full bg-sky-400/[0.04] blur-3xl"
-      ></div>
-
-      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <!-- Footer Logo -->
-
-        <div class="border-b border-white/10 py-8 sm:py-9">
-          <a
-            href="index.html"
-            class="group inline-flex max-w-xl items-center gap-3 rounded-2xl transition hover:opacity-90"
-          >
-            <span
-              class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-[#00a89d]/40 bg-white p-2 shadow-lg"
-            >
-              <img
-                src="assets/ecp-logo.svg"
-                alt="Eltham Chiropractic and Podiatry logo"
-                class="h-full w-full object-contain"
-              />
-            </span>
-
-            <span>
-              <span
-                class="block text-lg font-black leading-tight tracking-tight text-white sm:text-xl"
-              >
-                Eltham Chiropractic & Podiatry
-              </span>
-
-              <span
-                class="mt-1 block text-[11px] font-bold uppercase tracking-[0.16em] text-[#35cfc3]"
-              >
-                Local care in Eltham, London SE9
-              </span>
-            </span>
-          </a>
-        </div>
-
-        <!-- Footer Columns -->
-
-        <div
-          class="grid grid-cols-1 gap-x-8 gap-y-9 border-b border-white/10 py-9 sm:grid-cols-2 lg:grid-cols-12 lg:gap-x-7 lg:py-10"
-        >
-          <!-- Treatments -->
-
-          <div class="lg:col-span-3">
-            <h4
-              class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-white"
-            >
-              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>
-
-              Clinical Treatments
-            </h4>
-
-            <ul class="space-y-3 text-base text-slate-300">
-              <li>
-                <a
-                  href="treatments.html#chiropractic"
-                  class="hover:text-[#65ddd3] transition"
-                  >› Chiropractic</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="treatments.html#podiatry"
-                  class="hover:text-[#65ddd3] transition"
-                  >› Podiatry & Foot Care</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="treatments.html#osteopathy"
-                  class="hover:text-[#65ddd3] transition"
-                  >› Osteopathy</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="treatments.html#nutrition"
-                  class="hover:text-[#65ddd3] transition"
-                  >› Nutrition</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Explore -->
-
-          <div class="lg:col-span-2">
-            <h4
-              class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-white"
-            >
-              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>
-
-              Explore
-            </h4>
-
-            <ul class="space-y-3 text-base text-slate-300">
-              <li>
-                <a href="index.html" class="hover:text-[#65ddd3] transition"
-                  >› Home</a
-                >
-              </li>
-
-              <li>
-                <a href="about.html" class="hover:text-[#65ddd3] transition"
-                  >› About Our Clinic</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="treatments.html"
-                  class="hover:text-[#65ddd3] transition"
-                  >› Services</a
-                >
-              </li>
-
-              <li>
-                <a href="contact.html" class="hover:text-[#65ddd3] transition"
-                  >› Contact & Visit</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Opening Hours -->
-
-          <div class="lg:col-span-3">
-            <h4
-              class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-white"
-            >
-              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>
-
-              Service Opening Times
-            </h4>
-
-            <div class="space-y-3 text-sm text-slate-300">
-              <p class="!text-sm leading-relaxed">
-                <strong class="text-white">Podiatry:</strong>
-
-                Mon, Tue & Fri 7am–5pm; Wed 7am–8:30pm; Thu 7am–6:30pm; Sat
-                8am–3pm; Sun closed.
-              </p>
-
-              <p class="!text-sm leading-relaxed">
-                <strong class="text-white">Chiropractic & Osteopathy:</strong>
-
-                Mon & Tue 7am–4pm; Wed 7am–7pm; Thu 7am–12 noon; Fri 7am–7pm;
-                Sat & Sun closed.
-              </p>
-
-              <p class="!text-sm leading-relaxed">
-                Ask reception about nutrition appointments.
-              </p>
+    <footer id="site-footer" class="relative mt-auto overflow-hidden border-t border-[#00a89d]/30 bg-[#071827] pt-10 text-slate-300 sm:pt-12">
+      <div aria-hidden="true" class="pointer-events-none absolute -right-24 -top-32 h-80 w-80 rounded-full bg-[#00a89d]/[0.07] blur-3xl"></div>
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 border-b border-white/10 pb-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+          <section>
+            <h2 class="mb-4 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-white"><span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Clinical Treatments</h2>
+            <nav aria-label="Clinical treatments" class="space-y-2.5 text-sm">
+              <a class="block transition hover:text-[#65ddd3]" href="treatments.html#chiropractic">&rsaquo; &nbsp;Chiropractic</a>
+              <a class="block transition hover:text-[#65ddd3]" href="treatments.html#podiatry">&rsaquo; &nbsp;Podiatry &amp; Foot Care</a>
+              <a class="block transition hover:text-[#65ddd3]" href="treatments.html#osteopathy">&rsaquo; &nbsp;Osteopathy</a>
+              <a class="block transition hover:text-[#65ddd3]" href="treatments.html#nutrition">&rsaquo; &nbsp;Nutrition</a>
+            </nav>
+          </section>
+          <section>
+            <h2 class="mb-4 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-white"><span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Explore</h2>
+            <nav aria-label="Explore" class="space-y-2.5 text-sm">
+              <a class="block transition hover:text-[#65ddd3]" href="index.html">&rsaquo; &nbsp;Home</a>
+              <a class="block transition hover:text-[#65ddd3]" href="about.html">&rsaquo; &nbsp;About Our Clinic</a>
+              <a class="block transition hover:text-[#65ddd3]" href="treatments.html">&rsaquo; &nbsp;Services</a>
+              <a class="block transition hover:text-[#65ddd3]" href="contact.html">&rsaquo; &nbsp;Contact &amp; Visit</a>
+              <a class="block transition hover:text-[#65ddd3]" href="pricing.html">&rsaquo; &nbsp;Pricing</a>
+            </nav>
+          </section>
+          <section>
+            <h2 class="mb-4 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-white"><span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Service Opening Times</h2>
+            <div class="space-y-3 text-sm leading-relaxed">
+              <p><strong class="text-white">Podiatry:</strong> Mon, Tue &amp; Fri 7am&ndash;5pm; Wed 7am&ndash;8:30pm; Thu 7am&ndash;6:30pm; Sat 8am&ndash;3pm; Sun closed.</p>
+              <p><strong class="text-white">Chiropractic &amp; osteopathy:</strong> Mon &amp; Tue 7am&ndash;4pm; Wed 7am&ndash;7pm; Thu 7am&ndash;12 noon; Fri 7am&ndash;7pm; Sat &amp; Sun closed.</p>
+              <p>Ask reception about nutrition appointments.</p>
             </div>
-          </div>
-
-          <!-- Contact -->
-
-          <div id="footer-contact" class="lg:col-span-4">
-            <h4
-              class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-white"
-            >
-              <span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>
-
-              Contact Reception
-            </h4>
-
-            <address class="space-y-3 text-base not-italic text-slate-300">
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-start gap-2.5 leading-relaxed hover:text-white transition"
-              >
-                <i class="fa-solid fa-location-dot mt-1 text-[#35cfc3]"></i>
-
-                <span>
-                  10 Westmount Road, Eltham,<br />
-                  <span class="font-medium text-white">London SE9 1JD</span>
-                </span>
-              </a>
-
-              <a
-                href="tel:02088592223"
-                class="flex items-center gap-2.5 font-bold text-white hover:text-[#65ddd3] transition"
-              >
-                <i class="fa-solid fa-phone text-[#35cfc3]"></i>
-
-                020 8859 2223
-              </a>
-
-              <div
-                class="flex items-start gap-2.5 text-sm font-medium text-[#65ddd3]"
-              >
-                <i class="fa-solid fa-square-parking mt-1"></i>
-
-                <span
-                  >Half-hour free parking on Westmount Road (ticket
-                  required)</span
-                >
-              </div>
-
-              <!-- Google Reviews -->
-
-              <div
-                class="mt-5 rounded-2xl border border-white/10 bg-white/[0.04] p-4"
-              >
-                <div
-                  class="flex items-center justify-between gap-2 border-b border-white/10 pb-2.5"
-                >
-                  <div class="flex items-center gap-2">
-                    <i class="fa-brands fa-google text-base text-[#35cfc3]"></i>
-
-                    <span class="text-sm font-extrabold text-white"
-                      >Google Reviews</span
-                    >
-                  </div>
-
-                  <div
-                    class="flex items-center gap-1 text-amber-400 text-xs font-bold"
-                  >
-                    <span>★ 4.9</span>
-
-                    <span class="text-slate-400 font-normal">(120+)</span>
-                  </div>
-                </div>
-
-                <p class="!text-xs mt-3 text-slate-400">
-                  We appreciate your feedback and support.
-                </p>
-              </div>
+          </section>
+          <section>
+            <h2 class="mb-4 flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.12em] text-white"><span class="h-4 w-1 rounded-full bg-[#18b7ac]"></span>Contact Reception</h2>
+            <address class="space-y-3 text-sm not-italic leading-relaxed">
+              <a class="flex items-start gap-2 text-white transition hover:text-[#65ddd3]" href="https://www.google.com/maps/search/?api=1&amp;query=10+Westmount+Road%2C+Eltham%2C+London+SE9+1JD" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot mt-1 text-[#35cfc3]" aria-hidden="true"></i><span>10 Westmount Road, Eltham,<br />London SE9 1JD</span></a>
+              <a class="inline-flex items-center gap-2 font-bold text-white transition hover:text-[#65ddd3]" href="tel:02088592223"><i class="fa-solid fa-phone text-[#35cfc3]" aria-hidden="true"></i>020 8859 2223</a>
+              <p class="flex items-start gap-2 text-[#65ddd3]"><i class="fa-solid fa-square-parking mt-1" aria-hidden="true"></i><span>Half-hour free parking on Westmount Road (ticket required)</span></p>
             </address>
-          </div>
+            <div class="footer-review-buttons mt-5 flex flex-wrap gap-2">
+              <a href="#" class="inline-flex items-center gap-2 rounded-full bg-[#00a89d] px-3.5 py-2 text-xs font-extrabold text-white shadow-sm transition hover:bg-[#00857c]"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>Leave A Review</a>
+              <a href="#" class="inline-flex items-center gap-2 rounded-full border border-[#65ddd3]/50 bg-white/5 px-3.5 py-2 text-xs font-extrabold text-[#b8f5ef] transition hover:bg-white/10"><i class="fa-solid fa-star" aria-hidden="true"></i>See Reviews</a>
+            </div>
+          </section>
         </div>
-
-        <!-- Copyright -->
-
-        <div
-          class="flex flex-col gap-3 py-6 text-center text-xs text-slate-400 md:flex-row md:items-center md:justify-between md:text-left"
-        >
-          <p class="!text-xs">
-            © 2026 Eltham Chiropractic & Podiatry Clinic. All rights reserved.
-          </p>
-          <nav aria-label="Legal information" class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm md:justify-end">
-            <a href="terms-and-conditions.html" class="transition-colors hover:text-white">Terms &amp; Conditions</a>
-            <a href="privacy-policy.html" class="transition-colors hover:text-white">Privacy Policy</a>
-            <a href="cookie-policy.html" class="transition-colors hover:text-white">Cookie Policy</a>
+        <div class="flex flex-col gap-3 py-5 text-center text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <p>&copy; 2026 Eltham Chiropractic &amp; Podiatry Clinic. All rights reserved.</p>
+          <nav aria-label="Legal information" class="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:justify-end">
+            <a class="transition hover:text-white" href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            <a class="transition hover:text-white" href="privacy-policy.html">Privacy Policy</a>
+            <a class="transition hover:text-white" href="cookie-policy.html">Cookie Policy</a>
           </nav>
         </div>
       </div>
