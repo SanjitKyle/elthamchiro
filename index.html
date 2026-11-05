@@ -632,9 +632,10 @@
       ></div>
     </section>
     <!-- ==================== END HEALTHCARE HERO BANNER ==================== -->
-
+ 
+    <div class="home-after-hero">
     <!-- ==================== 4. UNDER BANNER SECTION (UNIFIED 5-FEATURE RIBBON CARD) ==================== -->
-    <section class="relative z-20 w-full px-4 sm:px-6 lg:px-8">
+    <section class="home-feature-ribbon relative z-20 w-full px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <div
           class="bg-white rounded-2xl shadow-lg border border-slate-100 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 py-2 sm:py-3 px-2"
@@ -800,7 +801,7 @@
     <!-- ==================== 5. OUR SERVICES SECTION ==================== -->
     <section
       id="treatments"
-      class="relative w-full scroll-mt-20 overflow-hidden border-b border-slate-100 py-12 sm:scroll-mt-24 sm:py-14"
+      class="home-treatments relative w-full scroll-mt-20 overflow-hidden border-b border-slate-100 py-12 sm:scroll-mt-24 sm:py-14"
       style="
         background:
           radial-gradient(
@@ -862,11 +863,11 @@
         </div>
 
         <div
-          class="mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"
+          class="home-service-grid mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"
         >
           <article
             id="service-chiropractic"
-            class="group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+            class="home-service-card group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
           >
             <img
               src="assets/serviceimage1.jfif"
@@ -901,7 +902,7 @@
 
           <article
             id="service-podiatry"
-            class="group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+            class="home-service-card group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
           >
             <img
               src="assets/serviceimage2.jfif"
@@ -936,7 +937,7 @@
 
           <article
             id="service-nutrition"
-            class="order-4 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+            class="home-service-card order-4 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
           >
             <img
               src="assets/serviceimage3.jpg"
@@ -971,7 +972,7 @@
 
           <article
             id="service-osteopathy"
-            class="order-3 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+            class="home-service-card order-3 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
           >
             <img
               src="assets/serviceimage4.jfif"
@@ -1006,7 +1007,9 @@
         </div>
       </div>
     </section>
+    </div>
 
+    
     <!-- ==================== 6. ABOUT OUR CLINIC ==================== -->
     <section
       id="about"
@@ -1111,368 +1114,6 @@
       </div>
     </section>
 
-    <!-- ==================== 7. OUR TREATMENTS (100% MATCHED TO REFERENCE) ==================== -->
-    <section
-      id="treatment-options"
-      class="relative w-full bg-white py-16 sm:py-20 lg:py-24 overflow-hidden border-b border-slate-100"
-    >
-      <!-- Top-Right Organic Corner Wave Decoration -->
-      <div
-        class="pointer-events-none absolute top-0 right-0 w-80 sm:w-96 lg:w-[420px] h-48 sm:h-60 overflow-hidden z-0"
-      >
-        <svg
-          viewBox="0 0 420 240"
-          fill="none"
-          class="w-full h-full"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M120 0 C 180 35, 240 10, 320 85 C 360 115, 390 100, 420 130 L 420 0 Z"
-            fill="#d1f9f2"
-            fill-opacity="0.45"
-          />
-          <path
-            d="M100 0 C 170 32, 230 12, 310 80 C 355 110, 385 98, 420 125"
-            stroke="#72e2d5"
-            stroke-width="2.2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M170 0 C 230 25, 280 8, 360 70 C 390 90, 405 85, 420 100"
-            stroke="#99f6e4"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-dasharray="4 4"
-          />
-        </svg>
-      </div>
-
-      <!-- Bottom-Left Organic Corner Wave Decoration -->
-      <div
-        class="pointer-events-none absolute bottom-0 left-0 w-80 sm:w-96 lg:w-[420px] h-48 sm:h-60 overflow-hidden z-0"
-      >
-        <svg
-          viewBox="0 0 420 240"
-          fill="none"
-          class="w-full h-full"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M 0 240 L 0 90 C 80 130, 130 80, 220 170 C 280 220, 330 200, 420 240 Z"
-            fill="#dcfce7"
-            fill-opacity="0.35"
-          />
-          <path
-            d="M 0 240 L 0 130 C 100 170, 150 120, 240 200 C 300 230, 350 220, 420 240 Z"
-            fill="#bbf2e9"
-            fill-opacity="0.55"
-          />
-          <path
-            d="M 0 120 C 100 160, 150 110, 240 190 C 300 225, 350 215, 420 235"
-            stroke="#5eead4"
-            stroke-width="2.2"
-            stroke-linecap="round"
-          />
-        </svg>
-      </div>
-
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 items-center"
-        >
-          <!-- Left: Text & Features (4 cols) -->
-          <div class="lg:col-span-4 flex flex-col items-start justify-center">
-            <!-- Pill Tag & Line -->
-            <div class="flex items-center gap-3 mb-5">
-              <span
-                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-200/90 bg-teal-50/80 text-[#009e93] text-[14px] font-bold uppercase tracking-wider shadow-xs"
-              >
-                <span class="w-2 h-2 rounded-full bg-[#009e93]"></span>
-                OUR TREATMENTS
-              </span>
-              <span class="w-16 h-px bg-slate-200"></span>
-            </div>
-
-            <!-- Main Heading -->
-            <h2
-              class="text-3xl sm:text-4xl lg:text-[46px] font-black tracking-tight leading-[1.08] mb-4"
-            >
-              <span class="text-[#0e2942] block">Care that</span>
-              <span class="text-[#009e93] block">moves you forward.</span>
-            </h2>
-
-            <!-- Subtitle -->
-            <p
-              class="text-slate-600 text-[16px] sm:text-[18px] leading-relaxed mb-7 max-w-md font-normal"
-            >
-              We offer a wide range of chiropractic, podiatry and osteopathy
-              services to alleviate pain, restore mobility, and keep you feeling
-              great.
-            </p>
-
-            <!-- 3 Bullet Features with Round Icon Badges -->
-            <div class="space-y-4 mb-8 w-full max-w-md">
-              <!-- Bullet 1: Fast, targeted pain relief -->
-              <div class="flex items-center gap-3.5">
-                <div
-                  class="w-8 h-8 rounded-full bg-teal-50/90 border border-teal-200/80 flex items-center justify-center text-[#009e93] shrink-0 shadow-xs"
-                >
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.2"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </div>
-                <span
-                  class="text-[16px] sm:text-[18px] font-semibold text-slate-700"
-                  >Fast, targeted pain relief</span
-                >
-              </div>
-
-              <!-- Bullet 2: Gentle, evidence-based clinical care -->
-              <div class="flex items-center gap-3.5">
-                <div
-                  class="w-8 h-8 rounded-full bg-teal-50/90 border border-teal-200/80 flex items-center justify-center text-[#009e93] shrink-0 shadow-xs"
-                >
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </div>
-                <span
-                  class="text-[16px] sm:text-[18px] font-semibold text-slate-700"
-                  >Gentle, evidence-based clinical care</span
-                >
-              </div>
-
-              <!-- Bullet 3: Bespoke rehabilitation & prevention -->
-              <div class="flex items-center gap-3.5">
-                <div
-                  class="w-8 h-8 rounded-full bg-teal-50/90 border border-teal-200/80 flex items-center justify-center text-[#009e93] shrink-0 shadow-xs"
-                >
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.2"
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
-                <span
-                  class="text-[16px] sm:text-[18px] font-semibold text-slate-700"
-                  >Bespoke rehabilitation &amp; prevention</span
-                >
-              </div>
-            </div>
-
-            <!-- CTA Button -->
-            <button
-              onclick="openBookingModal('Treatments')"
-              class="px-7 py-3.5 rounded-full bg-[#009e93] hover:bg-[#00877d] text-white font-bold text-[16px] sm:text-[18px] shadow-[0_8px_20px_rgba(0,158,147,0.3)] hover:shadow-[0_12px_24px_rgba(0,158,147,0.4)] hover:-translate-y-0.5 transition-all flex items-center gap-2.5 group cursor-pointer"
-            >
-              <span>Book a Treatment</span>
-              <svg
-                class="w-4 h-4 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2.5"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <!-- Right: 6 Exact Treatment Visual Cards Grid (8 cols) -->
-          <div
-            class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5"
-          >
-            <!-- Card 1: Back Pain Relief -->
-            <div
-              onclick="openBookingModal('Back Pain Relief')"
-              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
-            >
-              <img
-                src="assets/backpain.jfif"
-                alt="Back Pain Relief"
-                loading="lazy"
-                decoding="async"
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
-              ></div>
-              <div
-                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
-              >
-                <span>Back Pain Relief</span
-                ><span
-                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
-                >
-              </div>
-            </div>
-
-            <!-- Card 2: Neck Pain Treatment -->
-            <div
-              onclick="openBookingModal('Neck Pain Treatment')"
-              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
-            >
-              <img
-                src="assets/neckpain.jfif"
-                alt="Neck Pain Treatment"
-                loading="lazy"
-                decoding="async"
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
-              ></div>
-              <div
-                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
-              >
-                <span>Neck Pain Treatment</span
-                ><span
-                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
-                >
-              </div>
-            </div>
-
-            <!-- Card 3: Sports Injury Rehab -->
-            <div
-              onclick="openBookingModal('Sports Injury Rehab')"
-              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
-            >
-              <img
-                src="assets/sportinjury.jfif"
-                alt="Sports Injury Rehab"
-                loading="lazy"
-                decoding="async"
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
-              ></div>
-              <div
-                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
-              >
-                <span>Sports Injury Rehab</span
-                ><span
-                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
-                >
-              </div>
-            </div>
-
-            <!-- Card 4: Foot Care Solutions -->
-            <div
-              onclick="openBookingModal('Foot Care Solutions')"
-              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
-            >
-              <img
-                src="assets/footcare.jfif"
-                alt="Foot Care Solutions"
-                loading="lazy"
-                decoding="async"
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
-              ></div>
-              <div
-                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
-              >
-                <span>Foot Care Solutions</span
-                ><span
-                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
-                >
-              </div>
-            </div>
-
-            <!-- Card 5: Posture Correction -->
-            <div
-              onclick="openBookingModal('Posture Correction')"
-              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
-            >
-              <img
-                src="assets/posture.jpg"
-                alt="Posture Correction"
-                loading="lazy"
-                decoding="async"
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
-              ></div>
-              <div
-                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
-              >
-                <span>Posture Correction</span
-                ><span
-                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
-                >
-              </div>
-            </div>
-
-            <!-- Card 6: Wellness & Prevention -->
-            <div
-              onclick="openBookingModal('Wellness & Prevention')"
-              class="group relative aspect-[1.2/1] cursor-pointer overflow-hidden rounded-[22px] border border-slate-200/50 shadow-[0_6px_20px_rgba(10,35,54,0.10)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
-            >
-              <img
-                src="assets/wellness.jfif"
-                alt="Wellness & Prevention"
-                loading="lazy"
-                decoding="async"
-                class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0a3446]/45 via-transparent to-transparent"
-              ></div>
-              <div
-                class="absolute inset-x-2 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white/95 px-3 py-2 text-[14px] font-bold text-[#0e2942] shadow-sm sm:text-[16px]"
-              >
-                <span>Wellness &amp; Prevention</span
-                ><span
-                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ==================== 8. OUR CLINICAL TEAM ==================== -->
 

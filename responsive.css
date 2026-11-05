@@ -189,6 +189,58 @@ main table {
 }
 
 @media (max-width: 639px) {
+  .home-after-hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #treatments .home-service-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  #treatments .home-service-card {
+    height: auto !important;
+    min-height: 250px;
+  }
+
+  #treatments .home-service-card > div.absolute.inset-0 {
+    background: linear-gradient(
+      to top,
+      rgba(4, 30, 43, 0.96) 0%,
+      rgba(4, 30, 43, 0.82) 42%,
+      rgba(4, 30, 43, 0.3) 100%
+    ) !important;
+  }
+
+  .home-service-card > div.relative {
+    padding: 1.25rem;
+  }
+
+  #treatments .home-service-card h3,
+  #treatments .home-service-card p {
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  #treatments .home-service-card h3 {
+    font-size: clamp(20px, 5.5vw, 24px);
+  }
+
+  #treatments .home-service-card p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  #treatments .home-service-card a {
+    min-height: 40px;
+    font-size: 15px !important;
+    color: #075e63 !important;
+  }
+
+  .home-after-hero .home-treatments {
+    order: -1;
+  }
+
   #healthcare-hero .hero-copy {
     margin-inline: auto;
     text-align: center;
@@ -212,6 +264,36 @@ main table {
 
   #healthcare-hero .hero-trust {
     align-items: center;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 639px) {
+  #treatments .home-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  #treatments .home-service-card {
+    min-height: clamp(230px, 62vw, 270px);
+  }
+
+  #treatments .home-service-card > div.relative {
+    padding: 0.875rem;
+  }
+
+  #treatments .home-service-card h3 {
+    font-size: clamp(17px, 4.7vw, 20px);
+  }
+
+  #treatments .home-service-card p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+
+  #treatments .home-service-card a {
+    min-height: 36px;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 13px !important;
   }
 }
 
