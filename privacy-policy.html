@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="responsive.css" />
     <meta
       name="description"
       content="Privacy information for visitors to the Eltham Chiropractic &amp; Podiatry Clinic website."
@@ -114,7 +115,7 @@
           <a href="contact.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Contact</a>
         </nav>
         <a href="tel:+442088592223" aria-label="Call us now at 020 8859 2223" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#00a89d] px-3 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#00857c] sm:px-4 sm:text-sm"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sm:hidden">Call</span><span class="hidden sm:inline">Call Us Now</span></a>
-        <button type="button" onclick="toggleMobileNav()" class="shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden" aria-label="Toggle navigation" aria-expanded="false" id="mobileNavToggle"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i></button>
+        <button type="button" onclick="toggleMobileNav(); this.setAttribute('aria-expanded', String(!document.getElementById('mobileNav').classList.contains('hidden')))" class="shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav" id="mobileNavToggle"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i></button>
       </div>
       <nav id="mobileNav" aria-label="Mobile navigation" class="hidden border-t border-slate-100 bg-white px-4 py-3 lg:hidden">
         <div class="mx-auto grid max-w-7xl gap-1">

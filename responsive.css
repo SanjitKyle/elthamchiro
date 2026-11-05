@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+picture,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+main,
+main > *,
+main .grid > *,
+main .flex > * {
+  min-width: 0;
+}
+
+main [class*="max-w-"] {
+  max-width: 100%;
+}
+
+main p,
+main li,
+main h1,
+main h2,
+main h3,
+main a,
+main button,
+main td,
+main th {
+  overflow-wrap: anywhere;
+}
+
+main iframe {
+  width: 100%;
+}
+
+main table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#site-header > div {
+  min-width: 0;
+}
+
+#site-header > div > a:first-child {
+  min-width: 0;
+}
+
+#site-header > div > a:first-child img {
+  max-width: 100%;
+}
+
+#mobileNav a {
+  min-height: 44px;
+}
+
+@media (max-width: 1100px) {
+  #site-header nav[aria-label="Main navigation"] {
+    display: none !important;
+  }
+
+  #site-header #mobileNavToggle {
+    display: inline-flex !important;
+  }
+
+  #site-header #mobileNav:not(.hidden) {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1101px) {
+  #site-header #mobileNavToggle,
+  #site-header #mobileNav {
+    display: none !important;
+  }
+
+  #site-header nav[aria-label="Main navigation"] {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body p {
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+  }
+
+  body li,
+  body address {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  main h1 {
+    font-size: clamp(30px, 8vw, 44px) !important;
+    line-height: 1.12 !important;
+  }
+
+  main h2 {
+    font-size: clamp(24px, 6vw, 34px) !important;
+    line-height: 1.2 !important;
+  }
+
+  main section[id],
+  main article[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  #site-header > div {
+    gap: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  #site-header > div > a:first-child > span:first-child {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  #site-header > div > a:first-child > span:last-child {
+    overflow-wrap: normal;
+  }
+
+  #site-header > div > a[aria-label^="Call us now"] {
+    gap: 0.35rem;
+    padding: 0.5rem 0.65rem;
+  }
+
+  #site-topbar nav {
+    gap: 0.4rem !important;
+  }
+
+  #site-topbar nav a {
+    gap: 0.35rem !important;
+    padding: 0.35rem 0.55rem !important;
+    font-size: clamp(11px, 3.2vw, 14px) !important;
+    white-space: nowrap;
+  }
+
+  #site-footer > div > div:last-child {
+    gap: 0.5rem;
+  }
+
+  #site-footer > div > div:last-child p,
+  #site-footer > div > div:last-child p:last-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  main input,
+  main select,
+  main textarea,
+  main button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  #site-header > div > a:first-child {
+    gap: 0.4rem;
+  }
+
+  #site-header > div > a:first-child > span:first-child {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  #site-header > div > a:first-child > span:last-child > span:first-child {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  #healthcare-hero .hero-copy {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  #healthcare-hero .hero-copy h1,
+  #healthcare-hero .hero-copy h2,
+  #healthcare-hero .hero-copy > p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #healthcare-hero .hero-copy h1 span {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #healthcare-hero .hero-cta {
+    align-items: center;
+  }
+
+  #healthcare-hero .hero-trust {
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

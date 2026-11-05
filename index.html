@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>Eltham Chiropractic &amp; Podiatry Clinic | London SE9</title>
     <meta
       name="description"
@@ -224,7 +225,7 @@
           <a href="contact.html" class="whitespace-nowrap transition-colors hover:text-[#00a89d]">Contact</a>
         </nav>
         <a href="tel:+442088592223" aria-label="Call us now at 020 8859 2223" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#00a89d] px-3 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-[#00857c] sm:px-4 sm:text-sm"><i class="fa-solid fa-phone" aria-hidden="true"></i><span class="sm:hidden">Call</span><span class="hidden sm:inline">Call Us Now</span></a>
-        <button type="button" onclick="toggleMobileNav()" class="shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden" aria-label="Toggle navigation" aria-expanded="false" id="mobileNavToggle"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i></button>
+        <button type="button" onclick="toggleMobileNav(); this.setAttribute('aria-expanded', String(!document.getElementById('mobileNav').classList.contains('hidden')))" class="shrink-0 rounded-xl p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav" id="mobileNavToggle"><i class="fa-solid fa-bars text-xl" aria-hidden="true"></i></button>
       </div>
       <nav id="mobileNav" aria-label="Mobile navigation" class="hidden border-t border-slate-100 bg-white px-4 py-3 lg:hidden">
         <div class="mx-auto grid max-w-7xl gap-1">
@@ -351,7 +352,7 @@
         class="relative mx-auto grid max-w-7xl 2xl:max-w-[1440px] grid-cols-1 items-center gap-8 px-5 pb-14 pt-12 sm:px-8 sm:pb-16 sm:pt-14 lg:min-h-[493px] lg:grid-cols-[1.08fr_0.92fr] lg:gap-8 xl:gap-12 lg:px-8 xl:px-10 lg:py-0"
       >
         <!-- ====== LEFT CONTENT ====== -->
-        <div class="relative z-10 max-w-[620px]">
+        <div class="hero-copy relative z-10 max-w-[620px]">
           <!-- Welcome Badge -->
           <div
             class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#00A99D]/10 bg-[#dff5f7]/75 px-3 py-1 shadow-sm backdrop-blur-sm"
@@ -419,7 +420,7 @@
 
           <!-- CTA Buttons -->
           <div
-            class="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-5"
+            class="hero-cta mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-5"
           >
             <!-- Primary CTA: Book an Appointment -->
             <button
@@ -457,7 +458,7 @@
 
           <!-- Trust Indicators -->
           <div
-            class="mt-7 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7"
+            class="hero-trust mt-7 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7"
           >
             <div class="flex items-center gap-2.5">
               <div
