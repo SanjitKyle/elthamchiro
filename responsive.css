@@ -148,6 +148,12 @@ main table {
     gap: 0.4rem !important;
   }
 
+  #site-topbar nav[aria-label="Review links"] {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+
   #site-topbar nav a {
     gap: 0.35rem !important;
     padding: 0.35rem 0.55rem !important;
@@ -185,6 +191,33 @@ main table {
 
   #site-header > div > a:first-child > span:last-child > span:first-child {
     font-size: 11px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .about-hero-actions,
+  .contact-hero-actions,
+  .pricing-hero-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.5rem !important;
+  }
+
+  .about-hero-actions a,
+  .contact-hero-actions a,
+  .pricing-hero-actions a {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.7rem 0.45rem;
+    font-size: clamp(12px, 3.4vw, 14px);
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .about-hero-actions i {
+    font-size: 13px !important;
   }
 }
 
