@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -195,8 +195,8 @@
           <span class="hidden items-center gap-2 transition hover:text-white xl:inline-flex"><i class="fa-regular fa-clock text-[#00a89d]" aria-hidden="true"></i>Opening times &mdash; see below</span>
         </div>
         <nav aria-label="Review links" class="ml-auto flex items-center gap-2">
-          <a href="https://www.google.com/maps/place/Eltham+Chiropractic+%26+Podiatry+Clinic/@51.4517676,0.0625701,17z/data=!4m16!1m9!3m8!1s0x47d8ac038b032589:0xc2626f304f758362!2sEltham+Chiropractic+%26+Podiatry+Clinic!8m2!3d51.4517676!4d0.0625701!9m1!1b1!16s%2Fg%2F1tdzvztv!3m5!1s0x47d8ac038b032589:0xc2626f304f758362!8m2!3d51.4517676!4d0.0625701!16s%2Fg%2F1tdzvztv?entry=ttu&amp;g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 topbar-action text-[11px] font-bold text-white transition hover:bg-white/20 sm:gap-2 sm:px-3 sm:text-xs"><i class="fa-solid fa-pen-to-square text-[#35cfc3]" aria-hidden="true"></i>Leave A Review</a>
-          <a href="https://www.google.com/maps/place/Eltham+Chiropractic+%26+Podiatry+Clinic/@51.4517676,0.0625701,17z/data=!4m16!1m9!3m8!1s0x47d8ac038b032589:0xc2626f304f758362!2sEltham+Chiropractic+%26+Podiatry+Clinic!8m2!3d51.4517676!4d0.0625701!9m1!1b1!16s%2Fg%2F1tdzvztv!3m5!1s0x47d8ac038b032589:0xc2626f304f758362!8m2!3d51.4517676!4d0.0625701!16s%2Fg%2F1tdzvztv?entry=ttu&amp;g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 topbar-action text-[11px] font-bold text-white transition hover:bg-white/20 sm:gap-2 sm:px-3 sm:text-xs"><i class="fa-solid fa-star text-[#35cfc3]" aria-hidden="true"></i>See Reviews</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Eltham+Chiropractic+%26+Podiatry+Clinic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 topbar-action text-[11px] font-bold text-white transition hover:bg-white/20 sm:gap-2 sm:px-3 sm:text-xs"><i class="fa-solid fa-pen-to-square text-[#35cfc3]" aria-hidden="true"></i>Leave a Review</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Eltham+Chiropractic+%26+Podiatry+Clinic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-2.5 py-1.5 topbar-action text-[11px] font-bold text-white transition hover:bg-white/20 sm:gap-2 sm:px-3 sm:text-xs"><i class="fa-solid fa-star text-[#35cfc3]" aria-hidden="true"></i>See Reviews</a>
         </nav>
       </div>
     </div>
@@ -458,9 +458,9 @@
 
           <!-- Trust Indicators -->
           <div
-            class="hero-trust mt-7 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7"
+            class="hero-trust mt-7 flex flex-col gap-5 sm:flex-row sm:flex-nowrap sm:items-center sm:gap-7"
           >
-            <div class="flex items-center gap-2.5">
+            <div class="flex items-center gap-2.5 sm:whitespace-nowrap">
               <div
                 class="flex items-center gap-0.5 text-[#F5A623]"
                 aria-label="Rated 4.9 out of 5 stars"
@@ -516,12 +516,12 @@
                   />
                 </svg>
               </div>
-              <div class="flex items-center gap-1.5 text-[18px] text-[#6B8299]">
+              <div class="flex items-center gap-1.5 text-[18px] text-[#6B8299] sm:whitespace-nowrap">
                 <span class="font-extrabold text-[#102D49]">4.9 / 5.0</span>
               </div>
             </div>
             <div class="hidden h-8 w-px bg-[#102D49]/12 sm:block"></div>
-            <div class="flex items-center gap-2.5">
+            <div class="flex items-center gap-2.5 sm:whitespace-nowrap">
               <span
                 class="flex h-7 w-7 shrink-0 items-center justify-center text-[#009F96]"
               >
@@ -539,7 +539,7 @@
                   <path d="M16 3v4M8 3v4M3 10h18" />
                 </svg>
               </span>
-              <p class="text-[16px] font-extrabold text-[#102D49]">
+              <p class="text-[16px] font-extrabold text-[#102D49] sm:whitespace-nowrap">
                 <span>20+ Years</span>
                 <span class="font-semibold">Clinical Experience</span>
               </p>
@@ -799,6 +799,329 @@
     </section>
 
 
+
+
+    <!-- ==================== 5. OUR SERVICES SECTION ==================== -->
+    <section
+      id="treatments"
+      class="home-treatments relative w-full scroll-mt-20 overflow-hidden border-b border-slate-100 py-12 sm:scroll-mt-24 sm:py-14"
+      style="
+        background:
+          radial-gradient(
+            circle at 7% 0%,
+            rgba(145, 226, 232, 0.24),
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at 92% 0%,
+            rgba(145, 226, 232, 0.2),
+            transparent 28%
+          ),
+          #f7fbfd;
+      "
+    >
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -left-[124px] -top-[132px] h-[280px] w-[280px] rounded-full bg-[#ddf5f6]/80"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -left-[103px] -top-[111px] h-[238px] w-[238px] rounded-full border border-white/90"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -left-[85px] -top-[93px] h-[202px] w-[202px] rounded-full border border-[#c6edf0]/80"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-[124px] -top-[132px] h-[280px] w-[280px] rounded-full bg-[#ddf5f6]/75"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-[103px] -top-[111px] h-[238px] w-[238px] rounded-full border border-white/90"
+      ></div>
+      <div
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-[85px] -top-[93px] h-[202px] w-[202px] rounded-full border border-[#c6edf0]/80"
+      ></div>
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <span
+            class="inline-flex rounded-full border border-[#79d8d6] px-4 py-1 text-[18px] font-extrabold uppercase tracking-[0.24em] text-[#008f86]"
+          >
+            Our Services
+          </span>
+          <h2
+            class="mt-2 font-serif text-2xl font-semibold leading-tight tracking-tight text-[#0e2942] sm:text-3xl lg:text-4xl"
+          >
+            Comprehensive Care for a Healthier You
+          </h2>
+          <p
+            class="mx-auto mt-2 max-w-2xl text-[16px] leading-relaxed text-slate-600 sm:text-[18px]"
+            style="font-size: 20px"
+          >
+            From pain relief to long-term wellness, we're here to help you move
+            better and feel your best.
+          </p>
+        </div>
+
+        <div
+          class="home-service-grid mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"
+        >
+          <article
+            id="service-chiropractic"
+            class="home-service-card group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage1.jfif"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >01</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[20px] font-semibold leading-tight">
+                Chiropractic
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Musculoskeletal care for movement concerns.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">â†’</span></a
+              >
+            </div>
+          </article>
+
+          <article
+            id="service-podiatry"
+            class="home-service-card group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage2.jfif"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >02</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[22px] font-semibold leading-tight">
+                Podiatry &amp; Foot Care
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Expert care for feet and lower limbs.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">â†’</span></a
+              >
+            </div>
+          </article>
+
+          <article
+            id="service-nutrition"
+            class="home-service-card order-4 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage3.jpg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >04</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[20px] font-semibold leading-tight">
+                Nutrition
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Personalised nutrition advice.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">â†’</span></a
+              >
+            </div>
+          </article>
+
+          <article
+            id="service-osteopathy"
+            class="home-service-card order-3 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
+          >
+            <img
+              src="assets/serviceimage4.jfif"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
+            ></div>
+            <span
+              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
+              >03</span
+            >
+            <div class="relative z-10 p-4 text-white">
+              <h3 class="font-serif text-[20px] font-semibold leading-tight">
+                Osteopathy
+              </h3>
+              <p
+                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
+              >
+                Hands-on care for movement concerns.
+              </p>
+              <a
+                href="#about"
+                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
+                ><span>Learn More</span><span aria-hidden="true">â†’</span></a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- ==================== 6. ABOUT OUR CLINIC ==================== -->
+    <section
+      id="about"
+      class="w-full scroll-mt-20 bg-[#e8f5f6] sm:scroll-mt-24"
+    >
+      <div class="relative isolate w-full overflow-hidden bg-[#e8f5f6]">
+        <div
+          class="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-9 px-5 py-12 sm:gap-10 sm:px-8 sm:py-14 lg:grid-cols-[1.08fr_.92fr] lg:gap-14 lg:px-[5vw] lg:py-[76px]"
+        >
+          <!-- Clinic Photo with Services Badge -->
+          <div class="relative px-1 sm:px-3 lg:px-0">
+            <div
+              class="relative overflow-hidden rounded-[1.65rem] border-2 border-[#76d8d6] bg-slate-100 p-1 shadow-[0_16px_30px_rgba(14,110,116,0.16)] sm:rounded-[2rem]"
+            >
+              <img
+                src="assets/maineltham-chiro.jpg"
+                alt="Treatment room at Eltham Chiropractic and Podiatry Clinic"
+                loading="lazy"
+                class="aspect-[1.3] w-full rounded-[1.4rem] object-cover"
+              />
+            </div>
+            <div
+              aria-hidden="true"
+              class="absolute right-0 top-[57%] h-24 w-7 -translate-y-1/2 bg-[#008f86] sm:right-1 sm:h-28 sm:w-8"
+              style="
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+              "
+            ></div>
+            <div
+              class="absolute right-0 top-1/2 flex h-[88px] w-[88px] -translate-y-1/2 flex-col items-center justify-center rounded-full border-[5px] border-white bg-[#008f86] text-center text-white shadow-[0_10px_22px_rgba(14,41,66,0.22)] sm:-right-1 sm:h-[112px] sm:w-[112px] sm:border-[6px]"
+            >
+              <span class="text-[18px] font-medium sm:text-[18px]">Four</span>
+              <span class="text-[18px] font-extrabold leading-tight sm:text-xl"
+                >Services</span
+              >
+              <span class="text-[8px] font-semibold sm:text-[18px]"
+                >one clinic</span
+              >
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="flex flex-col items-start lg:pr-5">
+            <span
+              class="inline-flex items-center gap-2 text-[18px] font-extrabold uppercase tracking-[0.2em] text-[#008f86] sm:text-[18px]"
+            >
+              <span class="h-px w-8 bg-[#79d8d6]"></span>
+              About our clinic
+              <span class="h-px w-8 bg-[#79d8d6]"></span>
+            </span>
+            <h2
+              class="mt-3 max-w-2xl font-serif text-4xl font-medium leading-[0.98] tracking-[-0.045em] text-[#0e2942] sm:text-5xl lg:text-[clamp(3.55rem,4.2vw,4.5rem)]"
+            >
+              Expert Care. Lasting Results.
+            </h2>
+            <p
+              class="mt-5 max-w-2xl text-[13px] leading-[1.7] text-slate-600 sm:text-[14px] lg:text-[16px]"
+            >
+              At Eltham Chiropractic &amp; Podiatry, we believe in treating the
+              whole person, not just the symptoms. Our multidisciplinary team is
+              committed to helping you achieve optimal health, mobility and
+              wellbeing.
+            </p>
+
+            <div
+              class="mt-5 space-y-3 text-[13px] font-semibold text-[#0e2942] sm:text-[14px]"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[#008f86]"
+                ><svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="m3 8 3.2 3.2L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <span class="text-[18px]"
+                  >Experienced &amp; Qualified Practitioners</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[#008f86]"
+                ><svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="m3 8 3.2 3.2L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <span class="text-[18px]">Personalised Treatment Plans</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[#008f86]"
+                ><svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="m3 8 3.2 3.2L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <span class="text-[18px]">Holistic Approach to Health</span>
+              </div>
+            </div>
+
+            <button
+              onclick="openBookingModal()"
+              class="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#00a89d] px-6 py-3 text-[13px] font-bold text-white shadow-[0_8px_18px_rgba(0,168,157,0.2)] transition-all hover:bg-[#00857c] hover:shadow-[0_10px_22px_rgba(0,168,157,0.28)] sm:text-[16px]"
+            >
+              <span>Learn More About Us</span>
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
        <!-- ==================== 7. OUR TREATMENTS (100% MATCHED TO REFERENCE) ==================== -->
     <section
       id="treatment-options"
@@ -1024,7 +1347,7 @@
                 <span>Back Pain Relief</span
                 ><span
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
+                  >â†’</span
                 >
               </div>
             </a>
@@ -1051,7 +1374,7 @@
                 <span>Neck Pain Treatment</span
                 ><span
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
+                  >â†’</span
                 >
               </div>
             </a>
@@ -1077,7 +1400,7 @@
                 <span>Sports Injury Rehab</span
                 ><span
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
+                  >â†’</span
                 >
               </div>
             </div>
@@ -1104,7 +1427,7 @@
                 <span>Foot Care Solutions</span
                 ><span
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
+                  >â†’</span
                 >
               </div>
             </a>
@@ -1131,7 +1454,7 @@
                 <span>Posture Correction</span
                 ><span
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
+                  >â†’</span
                 >
               </div>
             </a>
@@ -1158,7 +1481,7 @@
                 <span>Wellness &amp; Prevention</span
                 ><span
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00a89d] text-white"
-                  >→</span
+                  >â†’</span
                 >
               </div>
             </a>
@@ -1183,322 +1506,6 @@
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 />
               </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ==================== 5. OUR SERVICES SECTION ==================== -->
-    <section
-      id="treatments"
-      class="home-treatments relative w-full scroll-mt-20 overflow-hidden border-b border-slate-100 py-12 sm:scroll-mt-24 sm:py-14"
-      style="
-        background:
-          radial-gradient(
-            circle at 7% 0%,
-            rgba(145, 226, 232, 0.24),
-            transparent 28%
-          ),
-          radial-gradient(
-            circle at 92% 0%,
-            rgba(145, 226, 232, 0.2),
-            transparent 28%
-          ),
-          #f7fbfd;
-      "
-    >
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -left-[124px] -top-[132px] h-[280px] w-[280px] rounded-full bg-[#ddf5f6]/80"
-      ></div>
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -left-[103px] -top-[111px] h-[238px] w-[238px] rounded-full border border-white/90"
-      ></div>
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -left-[85px] -top-[93px] h-[202px] w-[202px] rounded-full border border-[#c6edf0]/80"
-      ></div>
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -right-[124px] -top-[132px] h-[280px] w-[280px] rounded-full bg-[#ddf5f6]/75"
-      ></div>
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -right-[103px] -top-[111px] h-[238px] w-[238px] rounded-full border border-white/90"
-      ></div>
-      <div
-        aria-hidden="true"
-        class="pointer-events-none absolute -right-[85px] -top-[93px] h-[202px] w-[202px] rounded-full border border-[#c6edf0]/80"
-      ></div>
-      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-3xl text-center">
-          <span
-            class="inline-flex rounded-full border border-[#79d8d6] px-4 py-1 text-[18px] font-extrabold uppercase tracking-[0.24em] text-[#008f86]"
-          >
-            Our Services
-          </span>
-          <h2
-            class="mt-2 font-serif text-2xl font-semibold leading-tight tracking-tight text-[#0e2942] sm:text-3xl lg:text-4xl"
-          >
-            Comprehensive Care for a Healthier You
-          </h2>
-          <p
-            class="mx-auto mt-2 max-w-2xl text-[16px] leading-relaxed text-slate-600 sm:text-[18px]"
-            style="font-size: 20px"
-          >
-            From pain relief to long-term wellness, we're here to help you move
-            better and feel your best.
-          </p>
-        </div>
-
-        <div
-          class="home-service-grid mt-7 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"
-        >
-          <article
-            id="service-chiropractic"
-            class="home-service-card group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
-          >
-            <img
-              src="assets/serviceimage1.jfif"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
-            ></div>
-            <span
-              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
-              >01</span
-            >
-            <div class="relative z-10 p-4 text-white">
-              <h3 class="font-serif text-[20px] font-semibold leading-tight">
-                Chiropractic
-              </h3>
-              <p
-                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
-              >
-                Musculoskeletal care for movement concerns.
-              </p>
-              <a
-                href="#about"
-                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
-                ><span>Learn More</span><span aria-hidden="true">→</span></a
-              >
-            </div>
-          </article>
-
-          <article
-            id="service-podiatry"
-            class="home-service-card group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
-          >
-            <img
-              src="assets/serviceimage2.jfif"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
-            ></div>
-            <span
-              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
-              >02</span
-            >
-            <div class="relative z-10 p-4 text-white">
-              <h3 class="font-serif text-[22px] font-semibold leading-tight">
-                Podiatry &amp; Foot Care
-              </h3>
-              <p
-                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
-              >
-                Expert care for feet and lower limbs.
-              </p>
-              <a
-                href="#about"
-                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
-                ><span>Learn More</span><span aria-hidden="true">→</span></a
-              >
-            </div>
-          </article>
-
-          <article
-            id="service-nutrition"
-            class="home-service-card order-4 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
-          >
-            <img
-              src="assets/serviceimage3.jpg"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
-            ></div>
-            <span
-              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
-              >04</span
-            >
-            <div class="relative z-10 p-4 text-white">
-              <h3 class="font-serif text-[20px] font-semibold leading-tight">
-                Nutrition
-              </h3>
-              <p
-                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
-              >
-                Personalised nutrition advice.
-              </p>
-              <a
-                href="#about"
-                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
-                ><span>Learn More</span><span aria-hidden="true">→</span></a
-              >
-            </div>
-          </article>
-
-          <article
-            id="service-osteopathy"
-            class="home-service-card order-3 group relative flex h-[250px] flex-col justify-end overflow-hidden rounded-2xl border border-white/70 bg-[#0e5364] shadow-[0_8px_20px_rgba(14,41,66,0.12)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(14,41,66,0.2)] sm:h-[290px] xl:h-[310px]"
-          >
-            <img
-              src="assets/serviceimage4.jfif"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[#064c5a]/75 via-[#0b5265]/25 to-transparent"
-            ></div>
-            <span
-              class="absolute right-3 top-3 text-[16px] font-extrabold tracking-widest text-white/75"
-              >03</span
-            >
-            <div class="relative z-10 p-4 text-white">
-              <h3 class="font-serif text-[20px] font-semibold leading-tight">
-                Osteopathy
-              </h3>
-              <p
-                class="mt-1 text-[16px] leading-snug text-white/85 sm:text-[14px]"
-              >
-                Hands-on care for movement concerns.
-              </p>
-              <a
-                href="#about"
-                class="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[18px] font-bold text-[#087c83] transition hover:bg-[#dff6f7] sm:text-[18px]"
-                ><span>Learn More</span><span aria-hidden="true">→</span></a
-              >
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    </div>
-
-    <!-- ==================== 6. ABOUT OUR CLINIC ==================== -->
-    <section
-      id="about"
-      class="w-full scroll-mt-20 bg-[#e8f5f6] sm:scroll-mt-24"
-    >
-      <div class="relative isolate w-full overflow-hidden bg-[#e8f5f6]">
-        <div
-          class="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-9 px-5 py-12 sm:gap-10 sm:px-8 sm:py-14 lg:grid-cols-[1.08fr_.92fr] lg:gap-14 lg:px-[5vw] lg:py-[76px]"
-        >
-          <!-- Clinic Photo with Services Badge -->
-          <div class="relative px-1 sm:px-3 lg:px-0">
-            <div
-              class="relative overflow-hidden rounded-[1.65rem] border-2 border-[#76d8d6] bg-slate-100 p-1 shadow-[0_16px_30px_rgba(14,110,116,0.16)] sm:rounded-[2rem]"
-            >
-              <img
-                src="assets/maineltham-chiro.jpg"
-                alt="Treatment room at Eltham Chiropractic and Podiatry Clinic"
-                loading="lazy"
-                class="aspect-[1.3] w-full rounded-[1.4rem] object-cover"
-              />
-            </div>
-            <div
-              aria-hidden="true"
-              class="absolute right-0 top-[57%] h-24 w-7 -translate-y-1/2 bg-[#008f86] sm:right-1 sm:h-28 sm:w-8"
-              style="
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
-              "
-            ></div>
-            <div
-              class="absolute right-0 top-1/2 flex h-[88px] w-[88px] -translate-y-1/2 flex-col items-center justify-center rounded-full border-[5px] border-white bg-[#008f86] text-center text-white shadow-[0_10px_22px_rgba(14,41,66,0.22)] sm:-right-1 sm:h-[112px] sm:w-[112px] sm:border-[6px]"
-            >
-              <span class="text-[18px] font-medium sm:text-[18px]">Four</span>
-              <span class="text-[18px] font-extrabold leading-tight sm:text-xl"
-                >Services</span
-              >
-              <span class="text-[8px] font-semibold sm:text-[18px]"
-                >one clinic</span
-              >
-            </div>
-          </div>
-
-          <!-- Right Content -->
-          <div class="flex flex-col items-start lg:pr-5">
-            <span
-              class="inline-flex items-center gap-2 text-[18px] font-extrabold uppercase tracking-[0.2em] text-[#008f86] sm:text-[18px]"
-            >
-              <span class="h-px w-8 bg-[#79d8d6]"></span>
-              About our clinic
-              <span class="h-px w-8 bg-[#79d8d6]"></span>
-            </span>
-            <h2
-              class="mt-3 max-w-2xl font-serif text-4xl font-medium leading-[0.98] tracking-[-0.045em] text-[#0e2942] sm:text-5xl lg:text-[clamp(3.55rem,4.2vw,4.5rem)]"
-            >
-              Expert Care. Lasting Results.
-            </h2>
-            <p
-              class="mt-5 max-w-2xl text-[13px] leading-[1.7] text-slate-600 sm:text-[14px] lg:text-[16px]"
-            >
-              At Eltham Chiropractic &amp; Podiatry, we believe in treating the
-              whole person, not just the symptoms. Our multidisciplinary team is
-              committed to helping you achieve optimal health, mobility and
-              wellbeing.
-            </p>
-
-            <div
-              class="mt-5 space-y-3 text-[13px] font-semibold text-[#0e2942] sm:text-[14px]"
-            >
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[16px] font-black text-[#008f86]"
-                  >✓</span
-                >
-                <span class="text-[18px]"
-                  >Experienced &amp; Qualified Practitioners</span
-                >
-              </div>
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[16px] font-black text-[#008f86]"
-                  >✓</span
-                >
-                <span class="text-[18px]">Personalised Treatment Plans</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span
-                  class="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#d8f4f3] text-[16px] font-black text-[#008f86]"
-                  >✓</span
-                >
-                <span class="text-[18px]">Holistic Approach to Health</span>
-              </div>
-            </div>
-
-            <button
-              onclick="openBookingModal()"
-              class="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#00a89d] px-6 py-3 text-[13px] font-bold text-white shadow-[0_8px_18px_rgba(0,168,157,0.2)] transition-all hover:bg-[#00857c] hover:shadow-[0_10px_22px_rgba(0,168,157,0.28)] sm:text-[16px]"
-            >
-              <span>Learn More About Us</span>
-              <span aria-hidden="true">➜</span>
             </button>
           </div>
         </div>
@@ -1591,7 +1598,7 @@
             <span
               class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
             >
-              <span class="text-[20px]">✦</span>
+              <span class="text-[20px]">âœ¦</span>
               Spinal &amp; Joint Care
             </span>
 
@@ -1650,7 +1657,7 @@
             <span
               class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
             >
-              <span class="text-[20px]">♧</span>
+              <span class="text-[20px]">â™§</span>
               Foot &amp; Ankle Care
             </span>
 
@@ -1691,7 +1698,7 @@
             <span
               class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
             >
-              <span class="text-[20px]">✣</span>
+              <span class="text-[20px]">âœ£</span>
               Musculoskeletal Care
             </span>
 
@@ -1744,12 +1751,12 @@
             <span
               class="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e3f8f7] px-3 py-2 text-[14px] font-bold text-[#008f86]"
             >
-              <span class="text-[20px]">♧</span>
+              <span class="text-[20px]">â™§</span>
               Foot &amp; Ankle Care
             </span>
 
             <p class="mt-3 text-[13px] leading-relaxed text-slate-500">
-              Over 20 years’ experience in podiatry.
+              Over 20 yearsâ€™ experience in podiatry.
 
             <button
               type="button"
@@ -2181,7 +2188,7 @@
       }
 
       details[open] .faq-icon::before {
-        content: "−";
+        content: "âˆ’";
       }
     </style>
 
@@ -2223,7 +2230,7 @@
             <div class="mt-5">
               <p class="mb-3 text-xs font-extrabold uppercase tracking-[0.12em] text-white">Find us on Google</p>
               <div class="flex items-center gap-3" aria-label="Google Business Profile">
-                <a href="https://www.google.com/maps/place/Eltham+Chiropractic+%26+Podiatry+Clinic/@51.4517676,0.0625701,17z/data=!4m16!1m9!3m8!1s0x47d8ac038b032589:0xc2626f304f758362!2sEltham+Chiropractic+%26+Podiatry+Clinic!8m2!3d51.4517676!4d0.0625701!9m1!1b1!16s%2Fg%2F1tdzvztv!3m5!1s0x47d8ac038b032589:0xc2626f304f758362!8m2!3d51.4517676!4d0.0625701!16s%2Fg%2F1tdzvztv?entry=ttu&amp;g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" title="Google Business Profile" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-lg text-[#b8f5ef] shadow-sm transition hover:-translate-y-0.5 hover:border-[#18b7ac]/60 hover:bg-[#00a89d] hover:text-white"><i class="fa-brands fa-google" aria-hidden="true"></i><span class="sr-only">Google Business Profile</span></a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Eltham+Chiropractic+%26+Podiatry+Clinic" target="_blank" rel="noopener noreferrer" title="Google Business Profile" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-lg text-[#b8f5ef] shadow-sm transition hover:-translate-y-0.5 hover:border-[#18b7ac]/60 hover:bg-[#00a89d] hover:text-white"><i class="fa-brands fa-google" aria-hidden="true"></i><span class="sr-only">Google Business Profile</span></a>
               </div>
             </div>
           </section>
@@ -2254,8 +2261,8 @@
               <a class="inline-flex items-center gap-2 font-bold text-white transition hover:text-[#65ddd3]" href="tel:+442088592223"><i class="fa-solid fa-phone text-[#35cfc3]" aria-hidden="true"></i>020 8859 2223</a>
             </address>
             <div class="footer-review-buttons mt-5 flex flex-wrap gap-2">
-              <a href="https://www.google.com/maps/place/Eltham+Chiropractic+%26+Podiatry+Clinic/@51.4517676,0.0625701,17z/data=!4m16!1m9!3m8!1s0x47d8ac038b032589:0xc2626f304f758362!2sEltham+Chiropractic+%26+Podiatry+Clinic!8m2!3d51.4517676!4d0.0625701!9m1!1b1!16s%2Fg%2F1tdzvztv!3m5!1s0x47d8ac038b032589:0xc2626f304f758362!8m2!3d51.4517676!4d0.0625701!16s%2Fg%2F1tdzvztv?entry=ttu&amp;g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-[#00a89d] px-3.5 py-2 text-xs font-extrabold text-white shadow-sm transition hover:bg-[#00857c]"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>Leave A Review</a>
-              <a href="https://www.google.com/maps/place/Eltham+Chiropractic+%26+Podiatry+Clinic/@51.4517676,0.0625701,17z/data=!4m16!1m9!3m8!1s0x47d8ac038b032589:0xc2626f304f758362!2sEltham+Chiropractic+%26+Podiatry+Clinic!8m2!3d51.4517676!4d0.0625701!9m1!1b1!16s%2Fg%2F1tdzvztv!3m5!1s0x47d8ac038b032589:0xc2626f304f758362!8m2!3d51.4517676!4d0.0625701!16s%2Fg%2F1tdzvztv?entry=ttu&amp;g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-[#65ddd3]/50 bg-white/5 px-3.5 py-2 text-xs font-extrabold text-[#b8f5ef] transition hover:bg-white/10"><i class="fa-solid fa-star" aria-hidden="true"></i>See Reviews</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Eltham+Chiropractic+%26+Podiatry+Clinic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-[#00a89d] px-3.5 py-2 text-xs font-extrabold text-white shadow-sm transition hover:bg-[#00857c]"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>Leave a Review</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Eltham+Chiropractic+%26+Podiatry+Clinic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-[#65ddd3]/50 bg-white/5 px-3.5 py-2 text-xs font-extrabold text-[#b8f5ef] transition hover:bg-white/10"><i class="fa-solid fa-star" aria-hidden="true"></i>See Reviews</a>
             </div>
           </section>
         </div>
@@ -2319,7 +2326,7 @@
           Richard Frost
         </h2>
         <p class="mt-1 text-[16px] font-semibold text-[#607992]">
-          Chiropractor · D.C., M.Sc., B.Sc. (Hons)
+          Chiropractor Â· D.C., M.Sc., B.Sc. (Hons)
         </p>
         <div class="mt-6 space-y-4 text-[16px] leading-7 text-slate-600">
           <p>
@@ -2373,7 +2380,7 @@
           Stuart Dowden
         </h2>
         <p class="mt-1 text-[16px] font-semibold text-[#607992]">
-          Osteopath · B.Ost
+          Osteopath Â· B.Ost
         </p>
         <div class="mt-6 space-y-4 text-[16px] leading-7 text-slate-600">
           <p>
@@ -2422,15 +2429,15 @@
           Ina Farrelly
         </h2>
         <p class="mt-1 text-[16px] font-semibold text-[#607992]">
-          Podiatrist · Dip.PG, B.Sc, MRCPod · Society of Tissue Viability Trustee
-          · HCPC Registered
+          Podiatrist Â· Dip.PG, B.Sc, MRCPod Â· Society of Tissue Viability Trustee
+          Â· HCPC Registered
         </p>
 
         <div class="mt-6 space-y-4 text-[16px] leading-7 text-slate-600">
           <p>
             Ina has been in the profession for over 20 years and qualified in
             New Zealand. She believes podiatry is about much more than treating
-            foot problems — it’s about helping people stay healthy, active and
+            foot problems â€” itâ€™s about helping people stay healthy, active and
             independent, and continuing to enjoy the things that matter to
             them.
           </p>
@@ -2443,7 +2450,7 @@
             long-term health.
           </p>
           <p>
-            Ina’s career has included working within the NHS and as part of the
+            Inaâ€™s career has included working within the NHS and as part of the
             East London Wound Team, which later became Accelerate CIC,
             supporting patients with complex wounds and lymphoedema. Her
             clinical experience spans biomechanics, musculoskeletal podiatry,
@@ -2462,7 +2469,7 @@
             confidence and mobility.
           </p>
           <p class="font-semibold text-[#0e2942]">
-            Ultimately, Ina’s goal is to help you feel confident in your feet
+            Ultimately, Inaâ€™s goal is to help you feel confident in your feet
             and enjoy life to the fullest.
           </p>
         </div>
@@ -2573,7 +2580,7 @@
         const menu = document.getElementById("mobileTreatmentsSubmenu");
         const icon = document.getElementById("mobileTreatmentsIcon");
         menu.classList.toggle("hidden");
-        icon.textContent = menu.classList.contains("hidden") ? "▾" : "▴";
+        icon.textContent = menu.classList.contains("hidden") ? "â–¾" : "â–´";
       }
 
       function initializeTextReveals() {
